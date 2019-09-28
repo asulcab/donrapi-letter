@@ -21,16 +21,18 @@ export default [
       id: "1"
     },
     fields: {
-      name: "americo sulca",
       slug: "single-economy",
+      name: "americo sulca",
       type: "contrucción",
-      district: "Huancayo",
-      price: 3,
-      size: 200,
-      capacity: 1,
-      pets: false,
-      breakfast: false,
+      title: "Melamina MDF", // *add
+      district: "Huancayo", // *add
+      experience: 3, // x price
+      // size: 200,
+      // capacity: 1,
+      home: false, // x pets
+      workshop: false, // x breakfast
       featured: false,
+      contact: +51, // *add
       description:
         "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
       extras: [
@@ -427,7 +429,7 @@ export default [
       id: "8"
     },
     fields: {
-      name: "double deluxe",
+      name: "melamina, MDF",
       slug: "double-deluxe",
       type: "double",
       district: "Tambo",

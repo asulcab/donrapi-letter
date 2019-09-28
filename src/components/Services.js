@@ -12,7 +12,7 @@ export default class Services extends Component {
         title: "Limpieza Mantenimiento",
         info:
           "Mantenimiento, Limpieza y Remodelación de Inmuebles domésticos y comerciales."
-      },
+      },      
       {
         icon: <FaHardHat color='#FA7800' />,
         title: "Reparación Contrucción",        
