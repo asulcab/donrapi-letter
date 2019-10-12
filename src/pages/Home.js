@@ -23,7 +23,7 @@ const home = () => {
       </Hero>
       */}
       <Flow />
-      <Services />
+      {/* <Services /> */}
       <FeaturedRooms />
     </>
   );

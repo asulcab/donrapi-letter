@@ -14,13 +14,13 @@ export default class RoomProvider extends Component {
     type: "- ver todo -", // todas x all
     district:"- ver todo -",
     capacity: 1,
-    price: 0,
+    experience: 0, // price
     minPrice: 0,
     maxPrice: 0,
     minSize: 0,
     maxSize: 0,
-    breakfast: false,
-    pets: false
+    workshop: false, // breakfast
+    home: false // pets
   };
 
   // getData
@@ -86,7 +86,7 @@ export default class RoomProvider extends Component {
     let rooms = this.formatData(items);
     let featuredRooms = rooms.filter(room => room.featured === true);
     //
-    let maxPrice = Math.max(...rooms.map(item => item.price));
+    let maxPrice = Math.max(...rooms.map(item => item.experience));
     let maxSize = Math.max(...rooms.map(item => item.size));
     this.setState({
       rooms,
@@ -94,7 +94,7 @@ export default class RoomProvider extends Component {
       sortedRooms: rooms,
       loading: false,
       //
-      price: maxPrice,
+      experience: maxPrice,
       maxPrice,
       maxSize
     })
@@ -134,18 +134,18 @@ export default class RoomProvider extends Component {
       type,
       district,
       capacity,
-      price,
+      experience, // price
       minSize,
       maxSize,
-      breakfast,
-      pets
+      workshop, // breakfast
+      home // pets
     } = this.state;
 
     let tempRooms = [...rooms];
     // transform values
     // get capacity
     capacity = parseInt(capacity);
-    price = parseInt(price);
+    experience = parseInt(experience);
     // filter by type
     if (type !== "- ver todo -") {
       tempRooms = tempRooms.filter(room => room.type === type);
@@ -155,22 +155,22 @@ export default class RoomProvider extends Component {
       tempRooms = tempRooms.filter(room => room.district === district);
     }
     // filter by capacity
-    if (capacity !== 1) {
-      tempRooms = tempRooms.filter(room => room.capacity >= capacity);
-    }
+    // if (capacity !== 1) {
+    //   tempRooms = tempRooms.filter(room => room.capacity >= capacity);
+    // }
     // filter by price
-    tempRooms = tempRooms.filter(room => room.price <= price);
+    tempRooms = tempRooms.filter(room => room.experience <= experience);
     //filter by size
-    tempRooms = tempRooms.filter(
-      room => room.size >= minSize && room.size <= maxSize
-    );
+    // tempRooms = tempRooms.filter(
+    //   room => room.size >= minSize && room.size <= maxSize
+    // );
     //filter by breakfast
-    if (breakfast) {
-      tempRooms = tempRooms.filter(room => room.breakfast === true);
+    if (workshop) {
+      tempRooms = tempRooms.filter(room => room.workshop === true);
     }
     //filter by pets
-    if (pets) {
-      tempRooms = tempRooms.filter(room => room.pets === true);
+    if (home) {
+      tempRooms = tempRooms.filter(room => room.home === true);
     }
     this.setState({
       sortedRooms: tempRooms

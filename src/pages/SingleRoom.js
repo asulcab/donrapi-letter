@@ -36,15 +36,16 @@ export default class SingleRoom extends Component {
     }
     const {
       name,
-      type,
-      description,
       district,
+      type,
+      speciality,
+      experience,
+      home,
+      workshop,
+      description,
       capacity,
       size,
-      price,
       extras,
-      breakfast,
-      pets,
       images
     } = room;
     const [main, ...defaultImages] = images;
@@ -53,9 +54,9 @@ export default class SingleRoom extends Component {
     return (
       <>
         <StyledHero img={images[0] || this.state.defaultBcg}>
-          <Banner title={`${name} room`}>
-            <Link to="/rooms" className="btn-primary">
-              volver a especialistas
+          <Banner title={`${speciality}`}>
+            <Link to="/" className="btn-primary">
+              volver al inicio
             </Link>
           </Banner>
         </StyledHero>
@@ -74,8 +75,9 @@ export default class SingleRoom extends Component {
               <h3>Info</h3>
               <h6>Distrito : {district}</h6>
               <h6>Nombres: {name}</h6>
-              <h6>Especialista en: {type}</h6>
-              <h6>Experiencia : {price} años</h6>
+              <h6>Área: {type}</h6>
+              <h6>Especialista en: {speciality}</h6>
+              <h6>Experiencia : {experience} años</h6>
               {/* <h6>Tamaño : {size} SQFT</h6> */}
               {/*
               <h6>
@@ -83,8 +85,8 @@ export default class SingleRoom extends Component {
                 {capacity > 1 ? `${capacity} personas` : `${capacity} persona`}
               </h6>
               */}
-              <h6>{pets ? "Atención a domicilio" : ""}</h6>
-              <h6>{breakfast && "Atención en taller"}</h6>
+              <h6>{home ? "Atención a domicilio" : ""}</h6>
+              <h6>{workshop && "Atención en taller"}</h6>
             </article>
           </div>
         </section>

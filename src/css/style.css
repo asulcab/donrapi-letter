@@ -6,7 +6,7 @@
 body {
   /*font-family: 'Lato', sans-serif;*/
   box-sizing: border-box;
-  padding-top: 65.7px;
+  padding-top: 64px;
 }
 
 /*header {
@@ -112,12 +112,12 @@ button:hover {
 
 .slider-wrapper {
   position: relative;
-  height: calc(100vh - 65.7px);
+  height: calc(100vh - 64px);
   overflow: hidden;
 }
 
 .slide {
-  height: calc(100vh - 65.7px);
+  height: calc(100vh - 64px);
   background-size: cover !important;
 }
 
@@ -199,13 +199,12 @@ button:hover {
 
 .slider-content .inner span {
   /*font-family: 'Saira', sans-serif;*/
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script',sans-serif ,cursive;
   /*font-family: 'Pacifico', cursive;*/
   color: #FFFFFF;
   font-size: 40px;
   font-weight: 300;
-  line-height: 1;
-  margin: 0 auto;
+  line-height: 1.5;
 }
 
 .slider-content .inner h1 {
@@ -261,13 +260,13 @@ button:hover {
 
 @media (max-height: 500px) {
   .slider-wrapper, .slide {
-    height: calc(100vh - 65.7px);
+    height: calc(100vh - 64px);
   }    
 }
 
 @media (max-width: 640px) {
   .slider-wrapper, .slide {
-    height: calc(100vh - 65.7px);
+    height: calc(100vh - 64px);
   }    
 }
 

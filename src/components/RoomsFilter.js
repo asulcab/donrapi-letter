@@ -15,13 +15,13 @@ const RoomsFilter = ({ rooms }) => {
     type,
     district,
     capacity,
-    price,
+    experience, // price
     minPrice,
     maxPrice,
     minSize,
     maxSize,
-    breakfast,
-    pets
+    workshop, // breakfast
+    home // pets
   } = context;
 
   // get unique types
@@ -53,7 +53,7 @@ const RoomsFilter = ({ rooms }) => {
   ));
   return (
     <section className="filter-container">
-      <Title title="buscar especialista" />
+      <Title title="Buscar Especialista" />
       <form className="filter-form">
         {/* select type */}
         <div className="form-group">
@@ -101,14 +101,14 @@ const RoomsFilter = ({ rooms }) => {
         {/* end of guests */}
         {/* room price */}
         <div className="form-group">
-          <label htmlFor="price">expreriencia {price} años</label>
+          <label htmlFor="experience">expreriencia {experience} años</label>
           <input
             type="range"
-            name="price"
+            name="experience"
             min={minPrice}
             max={maxPrice}
-            id="price"
-            value={price}
+            id="experience"
+            value={experience}
             onChange={handleChange}
             className="form-control"
           />
@@ -144,21 +144,21 @@ const RoomsFilter = ({ rooms }) => {
             <span>
               <input
                 type="checkbox"
-                name="breakfast"
-                id="breakfast"
-                checked={breakfast}
+                name="home"
+                id="home"
+                checked={home}
                 onChange={handleChange}
               />
-              <label htmlFor="breakfast">domicilio</label>
+              <label htmlFor="home">domicilio</label>
             </span>
             <span style={{marginLeft: "1rem"}}>
               <input
                 type="checkbox"
-                name="pets"
-                checked={pets}
+                name="workshop"
+                checked={workshop}
                 onChange={handleChange}
               />
-              <label htmlFor="breakfast">taller</label>
+              <label htmlFor="home">taller</label>
             </span>
           </div>
         </div>
