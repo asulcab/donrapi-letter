@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { FaAlignRight } from "react-icons/fa";
+import { FaAlignRight, FaMotorcycle, FaPizzaSlice } from "react-icons/fa";
 import logo from "../images/logo.svg";
 import Contact from "./Contact";
 export default class Navbar extends Component {
@@ -30,7 +30,13 @@ export default class Navbar extends Component {
             className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
           >
             <li>
-              <Link to="/">Inicio</Link>
+              <Link to="/#">Inicio</Link>
+            </li>
+            <li>
+              <Link to="/nosotros">Nosotros</Link>
+            </li>
+            <li>
+              <Link to="/food-delivery" style={{ color: "#ffd800" }}><FaPizzaSlice className="nav-icon-delivery" />Delivery Food!</Link>
             </li>
             {/* <li>
               <Link to="/rooms">Especialistas</Link>

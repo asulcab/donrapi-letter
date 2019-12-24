@@ -29,7 +29,7 @@ Room.propTypes = {
     slug: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
     speciality: PropTypes.string.isRequired,
-    images: PropTypes.arrayOf(PropTypes.string).isRequired,
+    // images: PropTypes.arrayOf(PropTypes.string).isRequired,
     experience: PropTypes.number.isRequired
   })
 };

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { FaMagic, FaHardHat, FaTruckLoading, FaWaveSquare } from "react-icons/fa";
 import Title from "./Title";
-const t1 = "hola <br>";
 export default class Services extends Component {
   // FaHandshake
   
@@ -21,10 +20,10 @@ export default class Services extends Component {
       },
       {
         icon: <FaTruckLoading color='#33B13A' />,
-        title: "Mudanza Transporte",
+        title: "Transporte Distribución",
         // title2: "Transporte",
         info:
-          "Mudanzas de Casas, cuartos, departamentos u Oficinas, transporte a nivel nacional."
+          "Transporte y distribución, a escala local, de los bienes producidos o solicitados por los clientes."
       },
       {
         icon: <FaWaveSquare color='#6B407E' />,
@@ -37,7 +36,8 @@ export default class Services extends Component {
   render() {
     return (
       <section className="services">
-        <Title title="servicios" />
+        <div className="services-background-overlay"></div>
+        <Title title="Servicios" />
         <div className="services-center">
           {this.state.services.map(item => {
             return (

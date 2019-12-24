@@ -264,9 +264,18 @@ button:hover {
   }    
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 122px;
+  }
+  .slider-wrapper, .slide {
+    height: calc(100vh - 122px);
+  }
+}
+
 @media (max-width: 640px) {
   .slider-wrapper, .slide {
-    height: calc(100vh - 64px);
+    height: calc(100vh - 122px);
   }    
 }
 

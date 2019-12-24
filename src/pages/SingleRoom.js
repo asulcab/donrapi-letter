@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import { RoomContext } from "../context";
+import { FaWhatsapp } from "react-icons/fa";
 
 import StyledHero from "../components/StyledHero";
 export default class SingleRoom extends Component {
@@ -42,6 +43,8 @@ export default class SingleRoom extends Component {
       experience,
       home,
       workshop,
+      contact,
+      titleDescription,
       description,
       capacity,
       size,
@@ -68,16 +71,15 @@ export default class SingleRoom extends Component {
           </div>
           <div className="single-room-info">
             <article className="desc">
-              <h3>Detalles</h3>
+              {(titleDescription != '') ? <h3>{titleDescription}</h3> : <h3>Detalles</h3>}
               <p>{description}</p>
             </article>
             <article className="info">
               <h3>Info</h3>
-              <h6>Distrito : {district}</h6>
-              <h6>Nombres: {name}</h6>
+              {(name != '')?<h6>Nombres: {name}</h6>:''}
               <h6>Área: {type}</h6>
-              <h6>Especialista en: {speciality}</h6>
-              <h6>Experiencia : {experience} años</h6>
+              {(experience > 0) ? <h6>Experiencia: {experience} años</h6> : ''}
+              <h6>Especialdad: {speciality}</h6>
               {/* <h6>Tamaño : {size} SQFT</h6> */}
               {/*
               <h6>
@@ -85,18 +87,29 @@ export default class SingleRoom extends Component {
                 {capacity > 1 ? `${capacity} personas` : `${capacity} persona`}
               </h6>
               */}
-              <h6>{home ? "Atención a domicilio" : ""}</h6>
+              <h6>Distrito: {district}</h6>
+              <h6 style={{fontWeight: "600"}}>{home ? "Atención a domicilio (previa coordinación)" : ""}</h6>
               <h6>{workshop && "Atención en taller"}</h6>
+              {(contact != '')
+                ?
+                  <div style={{textAlign: "left", marginTop: "1em"}}>
+                    {contact}
+                  </div>
+                :
+                  ''
+              }
             </article>
           </div>
         </section>
         <section className="room-extras">
-          <h6>Extras </h6>
-          <ul className="extras">
-            {extras.map((item, index) => (
-              <li key={index}>- {item}</li>
-            ))}
-          </ul>
+          <div>
+            <h6>Extras </h6>
+            <ul className="extras">
+              {extras.map((item, index) => (
+                <li key={index}>- {item}</li>
+              ))}
+            </ul>
+          </div>
         </section>
       </>
     );

@@ -1,5 +1,7 @@
 import React from "react";
-import { FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
+import { FaWhatsapp, FaPhone } from "react-icons/fa";
 
 // import { Link } from "react-router-dom";
 // import defaultImg from "../images/room-1.jpeg";
@@ -24,13 +26,13 @@ import { FaWhatsapp } from "react-icons/fa";
 // };
 // export default Room;
 
-const Contact = ({contact}) => {
+const Contact = () => {
     return (
         <div className="section-contact">
-            <div className="contact">
-                <span><FaWhatsapp /></span>
-                <h6>964744780</h6>
-            </div>
+            <a className="contact" href="tel: 964744780">
+                <span><FaPhone /></span>
+                <h6>964 030 322</h6>
+            </a>
         </div>
     );
 };

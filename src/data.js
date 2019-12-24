@@ -1,3 +1,5 @@
+import React, { Component } from "react";
+
 import room1 from "./images/details-1.jpeg";
 import room2 from "./images/details-2.jpeg";
 import room3 from "./images/details-3.jpeg";
@@ -17,6 +19,20 @@ import img12 from "./images/room-12.jpeg";
 import img13 from "./images/room-13.jpeg";
 import img14 from "./images/room-14.jpeg";
 import img15 from "./images/room-15.jpeg";
+import delivery from "./images/delivery.jpeg";
+import delivery1 from "./images/details-delivery-1.jpeg";
+import delivery2 from "./images/details-delivery-2.jpeg";
+import delivery3 from "./images/details-delivery-3.jpeg";
+import furniture from "./images/furniture.jpeg";
+import furniture1 from "./images/details-furniture-1.jpeg";
+import furniture2 from "./images/details-furniture-2.jpeg";
+import furniture3 from "./images/details-furniture-3.jpeg";
+import camera from "./images/camera.jpeg";
+import cam1 from "./images/details-cam-1.jpeg";
+import cam2 from "./images/details-cam-2.jpeg";
+import cam3 from "./images/details-cam-3.jpeg";
+
+import { FaWhatsapp } from "react-icons/fa";
 
 export default [
   
@@ -26,53 +42,68 @@ export default [
       id: "14"
     },
     fields: {
-      slug: "single-economy",
-      name: "Americo Sulca",
-      district: "Huancayo",
+      slug: "carpinteria",
+      name: "",
+      district: "Huancayo, Tambo, Chilca",
       type: "Carpinteria",
-      speciality: "Melamina MDF",
-      experience: 3,
+      speciality: "Armado de Muebles",
+      experience: 7,
       home: true,
-      workshop: true,
-      contact: "51",
+      workshop: false,
+      contact:
+        <a
+          className="btn-primary-slider"
+          href="https://wa.me/51964744780?text=Armado%20de%20Muebles:%20Hola,%20quiero%20información."
+          target="_blank"
+          style={{ textAlign: "center", width: "100%" }}
+        >
+          <FaWhatsapp
+            style={{
+              fontSize: "1.4rem",
+              verticalAlign: "text-bottom",
+              marginRight: "5px"
+            }}
+          />
+          Contactar
+        </a>
+      ,
       featured: true,
-      description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+      titleDescription: "Armado de Muebles",
+      description: 
+        "Realizamos el servicio de ensamblado de muebles en melanina, MDF, entre otros. Contamos con movilidad propia, y técnicos según zona, lo que asegura la llegada puntual al domicilio del cliente, y así garantizar el cumplimiento del servicio ofrecido. Nuestro personal cuenta con uniformes e identificación respectiva, brindando de esta manera mayor seguridad y confianza a nuestros clientes. Llámanos y un maestro especialista llegara a tu casa.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
+        "Técnicos especializados y confiables",
+        "Buenos armados, grandes experiencias",
+        "Dejamos el producto, como te lo imaginaste",
+        "Suministro de piezas de melamina y vidrio",
+        "Suministro de accesorios en general"
       ],
       images: [
         {
           fields: {
             file: {
-              url: img13
+              url: furniture //img13
             }
           }
         },
         {
           fields: {
             file: {
-              url: room2
+              url: furniture1
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: furniture2
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: furniture3
             }
           }
         }
@@ -84,53 +115,68 @@ export default [
       id: "15"
     },
     fields: {
-      slug: "pintura",
-      name: "Juan Sulca",
-      district: "Chilca",
-      type: "Mantenimiento",
-      speciality: "Mantenimiento en General",
+      slug: "seguridad",
+      name: "",
+      district: "Huancayo, Tambo, Chilca",
+      type: "Seguridad",
+      speciality: "Cámaras de Vigilancia",
       experience: 6,
       home: true,
       workshop: false,
-      contact: +51,
+      contact:
+        <a
+          className="btn-primary-slider"
+          href="https://wa.me/51964744780?text=Instalación%20de%20Cámaras:%20Hola,%20quiero%20información."
+          target="_blank"
+          style={{ textAlign: "center", width: "100%" }}
+        >
+          <FaWhatsapp
+            style={{
+              fontSize: "1.4rem",
+              verticalAlign: "text-bottom",
+              marginRight: "5px"
+            }}
+          />
+          Contactar
+        </a>
+      ,
       featured: true,
+      titleDescription: "Instalación de Cámaras de Vigilancia",
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Estamos preparados para desarrollar su proyecto de seguridad y vigilancia electrónica sin importar el tamaño de su hogar, comercio, institución o la complejidad de sus necesidades. Le brindamos la posibilidad al cliente de contar con un amplio espectro de soluciones. Cada solución posee características y particularidades específicas, las cuales es importante tomar en consideración, para ello contamos con la asesoría de ingenieros y técnicos especializados que lo ayudaran a tomar la decisión adecuada en la implementación de su proyecto.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
+        "Acceso remoto desde internet",
+        "Bajo costo de mantenimiento",
+        "Asesoría y soporte técnico integral",
+        "Soluciones de acuerdo a sus necesidades",
+        "Capacitación en el sistema de vigilancia"
       ],
       images: [
         {
           fields: {
             file: {
-              url: img14
+              url: camera //img15
             }
           }
         },
         {
           fields: {
             file: {
-              url: room2
+              url: cam1
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: cam2
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: cam3
             }
           }
         }
@@ -142,53 +188,68 @@ export default [
       id: "16"
     },
     fields: {
-      slug: "seguridad",
-      name: "Juan Sulca",
-      district: "Chilca",
-      type: "Seguridad",
-      speciality: "Cámaras de Vigilancia",
+      slug: "transporte",
+      name: "",
+      district: "Huancayo, Tambo, Chilca",
+      type: "Transporte",
+      speciality: "Mensajeria y Paqueteria",
       experience: 6,
       home: true,
       workshop: false,
-      contact: +51,
+      contact:
+        <a
+          className="btn-primary-slider"
+          href="https://wa.me/51964744780?text=Mensajería%20y%20paquetería:%20Hola,%20quiero%20información."
+          target="_blank"
+          style={{ textAlign: "center", width: "100%" }}
+        >
+          <FaWhatsapp
+            style={{
+              fontSize: "1.4rem",
+              verticalAlign: "text-bottom",
+              marginRight: "5px"
+            }}
+          />
+          Contactar
+        </a>
+      ,
       featured: true,
+      titleDescription: "Servicio de mensajería y paquetería",
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "A través de esta web puedes pedir cualquier producto (posible de ser transportado en moto lineal), y recibirlo en cuestión de minutos en el lugar que decidas en la ciudad de Huancayo. Solucionamos tus pedidos y traslado de artículos /productos, documentos, comida, ropa, libros, pedidos de restaurantes que no cuentan con Delivery propio, etc. de una manera rápida, segura y confiable. Estamos conectados tecnológicamente y a nuestra plataforma web, en todo momento, y estaremos donde tú nos requieras; estamos dispuestos a brindarte el mejor servicio y cumplir con la entrega de tu pedido eficientemente. ¡No te compliques! Y recupera el tiempo perdido.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
+        "Atención express",
+        "Tu solución de transporte a un Click",
+        "Nuestros precios son muy competitivos",
+        "Te llevamos a domicilio lo que quieras",
+        "Nos adaptamos a la necesidad de cada cliente"
       ],
       images: [
         {
           fields: {
             file: {
-              url: img15
+              url: delivery1 //img14
             }
           }
         },
         {
           fields: {
             file: {
-              url: room2
+              url: delivery1
             }
           }
         },
         {
           fields: {
             file: {
-              url: room3
+              url: delivery2
             }
           }
         },
         {
           fields: {
             file: {
-              url: room4
+              url: delivery3
             }
           }
         }

@@ -4,6 +4,8 @@ import './css/App.css';
 import Home from "./pages/Home";
 import Rooms from "./pages/Rooms";
 import SingleRoom from "./pages/SingleRoom";
+import AboutUs from "./pages/AboutUs";
+import Food from "./pages/Food";
 import Error from "./pages/Error";
 
 import Navbar from "./components/Navbar";
@@ -19,6 +21,8 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/rooms/" component={Rooms} />
         <Route exact path="/rooms/:slug" component={SingleRoom} />
+        <Route exact path="/nosotros" component={AboutUs} />
+        <Route exact path="/food-delivery" component={Food} />
         <Route component={Error} />
       </Switch>
       <Footer />
