@@ -16,7 +16,7 @@ export default class Services extends Component {
         icon: <FaHardHat color='#FA7800' />,
         title: "Reparación Contrucción",        
         info:
-          "Especialistas en pintura, driwall, carpintería, plomería, jardineria, instalaciones eléctricas."
+          "Especialistas en pintura, drywall, carpintería, plomería, jardineria, instalaciones eléctricas."
       },
       {
         icon: <FaTruckLoading color='#33B13A' />,
