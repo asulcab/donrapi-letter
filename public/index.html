@@ -19,7 +19,15 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Chambits</title>    
+    <title>Chambits</title>
+
+    <!-- You can use Open Graph tags to customize link previews.
+        Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+    <meta property="og:url" content="https://chambits.netlify.com/food-delivery" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Chambits | Delivery food!" />
+    <meta property="og:description" content="Broaster" />
+    <meta property="og:image" content="hhttps://chambits.netlify.com/static/media/broaster02.41abdb6f.jpeg" />
     
     <!-- WhatsHelp.io widget -->
     <script type="text/javascript">
@@ -54,5 +62,20 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+    
+    <!-- Your share button code -->
+    <div class="fb-share-button" data-href="https://chambits.netlify.com/food-delivery" data-layout="button_count">
+    </div>
+
   </body>
 </html>
