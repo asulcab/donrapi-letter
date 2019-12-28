@@ -24,7 +24,7 @@ import delivery1 from "./images/details-delivery-1.jpeg";
 import delivery2 from "./images/details-delivery-2.jpeg";
 import delivery3 from "./images/details-delivery-3.jpeg";
 import furniture from "./images/furniture.jpeg";
-import furniture1 from "./images/details-furniture-1.jpeg";
+import furniture1 from "./images/posito.png";
 import furniture2 from "./images/details-furniture-2.jpeg";
 import furniture3 from "./images/details-furniture-3.jpeg";
 import camera from "./images/camera.jpeg";
