@@ -70,7 +70,7 @@ export default [
       featured: true,
       titleDescription: "Armado de Muebles",
       description: 
-        "Realizamos el servicio de ensamblado de muebles en melanina, MDF, entre otros. Contamos con movilidad propia, y técnicos según zona, lo que asegura la llegada puntual al domicilio del cliente, y así garantizar el cumplimiento del servicio ofrecido. Nuestro personal cuenta con uniformes e identificación respectiva, brindando de esta manera mayor seguridad y confianza a nuestros clientes. Llámanos y un maestro especialista llegara a tu casa.",
+        "Realizamos el servicio de ensamblado de muebles en melamina, MDF, entre otros. Contamos con movilidad propia, y técnicos según zona, lo que asegura la llegada puntual al domicilio del cliente, y así garantizar el cumplimiento del servicio ofrecido. Nuestro personal cuenta con uniformes e identificación respectiva, brindando de esta manera mayor seguridad y confianza a nuestros clientes. Llámanos y un maestro especialista llegara a tu casa.",
       extras: [
         "Técnicos especializados y confiables",
         "Buenos armados, grandes experiencias",
