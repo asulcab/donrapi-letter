@@ -18,7 +18,7 @@ const content = [
 		// description:
 		// 'Especialistas en pintura, driwall, carpintería, plomería, instalaciones eléctricas, jardinería, limpieza domiciliaria o comercial. Soluciones a la medida, servicios las 24 horas los 7 días de la semana. ¡Llámanos! estamos seguros que cubriremos tus expectativas.',
 		// cards: <Cards />,
-		slogan: '- Lo quieres lo tienes. -',
+		slogan: '- Lo quieres, lo tienes. -',
 		button: <Link to="/nosotros" className="btn-primary-slider">Leer más</Link>,
 		logo: logo,
 		image: images,
