@@ -29,7 +29,7 @@ const content = [
 		title: 'Técnicos en Informática',
 		description:
 		'Instalación de cámaras de seguridad y redes de computadoras, reparación y mantenimiento de equipos informáticos. Soluciones en todos los niveles, personal técnico especializado. ¿Quieres un equipo de cómputo para un trabajo en especial? Te ayudamos con cualquier duda que tengas, ¡Contáctanos!',
-		button: <a className="btn-primary-slider" href="https://wa.me/51964744780?text=Técnicos%20en%20informática:%20Hola,%20quiero%20información." target="_blank">< FaWhatsapp style={{ fontSize: "1.4rem", verticalAlign:"text-bottom", marginRight:"5px"}} />Contactar ahora</a>,
+		button: <a className="btn-primary-slider" href="https://wa.me/51980895124?text=Técnicos%20en%20informática:%20Hola,%20quiero%20información." target="_blank">< FaWhatsapp style={{ fontSize: "1.4rem", verticalAlign:"text-bottom", marginRight:"5px"}} />Contactar ahora</a>,
 		image: 'https://i.imgur.com/DCdBXcq.jpg',
 		user: 'Erich Behrens',
 		userProfile: 'https://i.imgur.com/0Clfnu7.png'
@@ -38,7 +38,7 @@ const content = [
 		title: 'Desarrollo de Aplicaciones Web',
 		description:
 		'Diseñamos y desarrollamos tu página web. ¿Quieres vender por internet o potenciar aún más tus ventas? Una página web e-commerce es lo que necesitas ¡Y te lo hacemos! También diseño gráfico en general. Y sobre los precios, no te preocupes, sabemos que te encantarán. ¡Contáctanos!',
-		button: <a className="btn-primary-slider" href="https://wa.me/51964744780?text=Desarrollo%20web:%20Hola,%20quiero%20información." target="_blank">< FaWhatsapp style={{ fontSize: "1.4rem", verticalAlign: "text-bottom", marginRight: "5px" }} />Contactar ahora</a>,
+		button: <a className="btn-primary-slider" href="https://wa.me/51980895124?text=Desarrollo%20web:%20Hola,%20quiero%20información." target="_blank">< FaWhatsapp style={{ fontSize: "1.4rem", verticalAlign: "text-bottom", marginRight: "5px" }} />Contactar ahora</a>,
 		image: 'https://i.imgur.com/DvmN8Hx.jpg',
 		user: 'Bruno Vizovskyy',
 		userProfile: 'https://i.imgur.com/4KeKvtH.png'

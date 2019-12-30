@@ -29,9 +29,9 @@ import { FaWhatsapp, FaPhone } from "react-icons/fa";
 const Contact = () => {
     return (
         <div className="section-contact">
-            <a className="contact" href="tel: 964744780">
+            <a className="contact" href="tel: 980895124">
                 <span><FaPhone /></span>
-                <h6>964 030 322</h6>
+                <h6>980 895 124</h6>
             </a>
         </div>
     );

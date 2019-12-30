@@ -24,7 +24,7 @@ import delivery1 from "./images/details-delivery-1.jpeg";
 import delivery2 from "./images/details-delivery-2.jpeg";
 import delivery3 from "./images/details-delivery-3.jpeg";
 import furniture from "./images/furniture.jpeg";
-import furniture1 from "./images/details-furniture-1.jpeg";
+import furniture1 from "./images/bg_post.png";
 import furniture2 from "./images/details-furniture-2.jpeg";
 import furniture3 from "./images/details-furniture-3.jpeg";
 import camera from "./images/camera.jpeg";
@@ -53,7 +53,7 @@ export default [
       contact:
         <a
           className="btn-primary-slider"
-          href="https://wa.me/51964744780?text=Armado%20de%20Muebles:%20Hola,%20quiero%20información."
+          href="https://wa.me/51980895124?text=Armado%20de%20Muebles:%20Hola,%20quiero%20información."
           target="_blank"
           style={{ textAlign: "center", width: "100%" }}
         >
@@ -126,7 +126,7 @@ export default [
       contact:
         <a
           className="btn-primary-slider"
-          href="https://wa.me/51964744780?text=Instalación%20de%20Cámaras:%20Hola,%20quiero%20información."
+          href="https://wa.me/51980895124?text=Instalación%20de%20Cámaras:%20Hola,%20quiero%20información."
           target="_blank"
           style={{ textAlign: "center", width: "100%" }}
         >
@@ -199,7 +199,7 @@ export default [
       contact:
         <a
           className="btn-primary-slider"
-          href="https://wa.me/51964744780?text=Mensajería%20y%20paquetería:%20Hola,%20quiero%20información."
+          href="https://wa.me/51980895124?text=Mensajería%20y%20paquetería:%20Hola,%20quiero%20información."
           target="_blank"
           style={{ textAlign: "center", width: "100%" }}
         >

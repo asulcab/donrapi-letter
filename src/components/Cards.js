@@ -71,7 +71,7 @@ const card = [
     button: 
       <a
         className="btn-primary-slider"
-        href="https://wa.me/51964030322?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20personal."
+        href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20personal."
         target="_blank"
         style={{ textAlign: "center" }}
       >
@@ -98,7 +98,7 @@ const card = [
     button:
       <a
         className="btn-primary-slider"
-        href="https://wa.me/51964030322?text=Pedido%20broaster:%20Hola,%20quiero%20el%20combo%20familiar."
+        href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola,%20quiero%20el%20combo%20familiar."
         target="_blank"
         style={{ textAlign: "center" }}
       >
@@ -125,7 +125,7 @@ const card = [
     button:
       <a
         className="btn-primary-slider"
-        href="https://wa.me/51964030322?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
+        href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
         target="_blank"
         style={{ textAlign: "center" }}
       >
