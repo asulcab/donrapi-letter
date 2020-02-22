@@ -12,6 +12,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import Broaster01 from "../images/broaster01.jpeg";
 import Broaster02 from "../images/broaster02.jpeg";
 import Broaster03 from "../images/broaster03.jpeg";
+import Logo from "../images/logo.png";
 
 import "../css/styles-card.css";
 
@@ -147,6 +148,10 @@ function App({ classes }) {
       <div className="cards-overlay"></div>
       <div className="title">
         <span>- Pollo Broaster -</span>
+        {/* <div className="logCom"><img src={Logo} className="log" /></div> */}
+        <div className="content-atention">
+          <span className="atention">🔥Delivery: Lun-Dom de 16:00-22:00 horas </span>
+        </div>
       </div>
       <div className="App">
         {card.map(item => {
