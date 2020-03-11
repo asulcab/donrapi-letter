@@ -70,7 +70,9 @@ export default [
       featured: true,
       titleDescription: "Armado de Muebles",
       description: 
-        "Realizamos el servicio de ensamblado de muebles en melamina, MDF, entre otros. Contamos con movilidad propia, y técnicos según zona, lo que asegura la llegada puntual al domicilio del cliente, y así garantizar el cumplimiento del servicio ofrecido. Nuestro personal cuenta con uniformes e identificación respectiva, brindando de esta manera mayor seguridad y confianza a nuestros clientes. Llámanos y un maestro especialista llegara a tu casa.",
+        "Realizamos el servicio de ensamblado de muebles en melamina, MDF, entre otros. Contamos con movilidad propia, y técnicos según zona, lo que asegura la llegada puntual al domicilio del cliente, y así garantizar el cumplimiento del servicio ofrecido. Nuestro personal cuenta con uniformes e identificación respectiva, brindando de esta manera mayor seguridad y confianza a nuestros clientes. Llámanos y un técnico especialista llegara a tu casa.",
+      titleDescription02: "Servicio Express / Atención Inmediata",
+      description02: "Por lo general contamos con la posibilidad de realizar el armado de tu mueble el mismo día, si deseas conocer la disponibilidad de alguno de nuestros técnicos en el momento que estás leyendo esto, por favor, consúltanos mediante una llamada telefónica o un mensaje directo haciendo clic en el botón: CONTACTAR (WhatsApp) o, también por Messenger o WhatsApp, haciendo clic en el botón (¿Necesitas ayuda?) ubicado en la parte baja del lado derecho de tu pantalla.",
       extras: [
         "Técnicos especializados y confiables",
         "Buenos armados, grandes experiencias",
@@ -144,6 +146,8 @@ export default [
       titleDescription: "Instalación de Cámaras de Vigilancia",
       description:
         "Estamos preparados para desarrollar su proyecto de seguridad y vigilancia electrónica sin importar el tamaño de su hogar, comercio, institución o la complejidad de sus necesidades. Le brindamos la posibilidad al cliente de contar con un amplio espectro de soluciones. Cada solución posee características y particularidades específicas, las cuales es importante tomar en consideración, para ello contamos con la asesoría de ingenieros y técnicos especializados que lo ayudaran a tomar la decisión adecuada en la implementación de su proyecto.",
+      titleDescription02: "",
+      description02: "",
       extras: [
         "Acceso remoto desde internet",
         "Bajo costo de mantenimiento",
@@ -217,6 +221,8 @@ export default [
       titleDescription: "Servicio de mensajería y paquetería",
       description:
         "A través de esta web puedes pedir cualquier producto (posible de ser transportado en moto lineal), y recibirlo en cuestión de minutos en el lugar que decidas en la ciudad de Huancayo. Solucionamos tus pedidos y traslado de artículos /productos, documentos, comida, ropa, libros, pedidos de restaurantes que no cuentan con Delivery propio, etc. de una manera rápida, segura y confiable. Estamos conectados tecnológicamente y a nuestra plataforma web, en todo momento, y estaremos donde tú nos requieras; estamos dispuestos a brindarte el mejor servicio y cumplir con la entrega de tu pedido eficientemente. ¡No te compliques! Y recupera el tiempo perdido.",
+      titleDescription02: "",
+      description02: "",
       extras: [
         "Atención express",
         "Tu solución de transporte a un Click",

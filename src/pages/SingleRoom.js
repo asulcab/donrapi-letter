@@ -46,6 +46,8 @@ export default class SingleRoom extends Component {
       contact,
       titleDescription,
       description,
+      titleDescription02,
+      description02,
       capacity,
       size,
       extras,
@@ -73,6 +75,8 @@ export default class SingleRoom extends Component {
             <article className="desc">
               {(titleDescription != '') ? <h3>{titleDescription}</h3> : <h3>Detalles</h3>}
               <p>{description}</p>
+              {(titleDescription02 != '') ? <h6 style={{marginTop: "1em"}}>{titleDescription02}</h6> : ""}
+              <p>{description02}</p>
             </article>
             <article className="info">
               <h3>Info</h3>

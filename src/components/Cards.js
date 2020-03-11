@@ -148,7 +148,7 @@ function App({ classes }) {
       <div className="cards-overlay"></div>
       <div className="title">
         <span>- Pollo Broaster -</span>
-        {/* <div className="logCom"><img src={Logo} className="log" /></div> */}
+        <div className="logCom"><img src={Logo} className="log" /></div>
         <div className="content-atention">
           <span className="atention">🔥Delivery: Lun-Dom de 16:00-22:00 horas </span>
         </div>
