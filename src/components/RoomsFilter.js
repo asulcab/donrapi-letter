@@ -53,7 +53,7 @@ const RoomsFilter = ({ rooms }) => {
   ));
   return (
     <section className="filter-container">
-      <Title title="Buscar Especialista" />
+      <Title title="Buscar Restaurante" />
       <form className="filter-form">
         {/* select type */}
         <div className="form-group">
@@ -158,7 +158,7 @@ const RoomsFilter = ({ rooms }) => {
                 checked={workshop}
                 onChange={handleChange}
               />
-              <label htmlFor="home">taller</label>
+              <label htmlFor="home">local</label>
             </span>
           </div>
         </div>

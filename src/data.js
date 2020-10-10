@@ -19,35 +19,59 @@ import img12 from "./images/room-12.jpeg";
 import img13 from "./images/room-13.jpeg";
 import img14 from "./images/room-14.jpeg";
 import img15 from "./images/room-15.jpeg";
-import delivery from "./images/delivery.jpeg";
+import BG_LaMora from "./images/BG_lamora.jpeg";
+import BG_Logo_LaMora from "./images/BG_logo_lamora.jpeg";
 import delivery1 from "./images/details-delivery-1.jpeg";
 import delivery2 from "./images/details-delivery-2.jpeg";
 import delivery3 from "./images/details-delivery-3.jpeg";
-import furniture from "./images/furniture.jpeg";
+import BG_ViejoMadero from "./images/BG_viejomadero.jpeg";
+import BG_Logo_ViejoMadero from "./images/BG_logo_viejomadero.jpeg";
 import furniture1 from "./images/details-furniture-1.jpeg";
 import furniture2 from "./images/details-furniture-2.jpeg";
 import furniture3 from "./images/details-furniture-3.jpeg";
-import camera from "./images/camera.jpeg";
+import BG_ChifaCentro from "./images/BG_chifacentro.png";
+import BG_Logo_ChifaCentro from "./images/BG_logo_chifacentro.jpeg";
 import cam1 from "./images/details-cam-1.jpeg";
 import cam2 from "./images/details-cam-2.jpeg";
 import cam3 from "./images/details-cam-3.jpeg";
+
+import BG_Carnivoro from "./images/BG_carnivoro.jpeg";
+import BG_Logo_Carnivoro from "./images/BG_logo_carnivoro.jpeg";
+
+// Business Logo
+import Viejo_Madero from "./images/logo.png";
+import Chifa_Centro from "./images/logo_chifa_centro.png";
+import La_Mora from "./images/logo_la_mora.png";
+import Carnivoro from "./images/logo_carnivoro.png";
+// Image Card
+import Broaster01 from "./images/broaster01.jpeg";
+import Broaster02 from "./images/broaster02.jpeg";
+import Broaster03 from "./images/broaster03.jpeg";
 
 import { FaWhatsapp } from "react-icons/fa";
 
 export default [
   
-  // Featured Room
+  /*
+  * Featured Restaurant (featured: true)
+  */
+
+  // Top Content: El Viejo Madero
   {
     sys: {
       id: "14"
     },
     fields: {
-      slug: "carpinteria",
+      active: true,
+      slug: "pollos",
       name: "",
       district: "Huancayo, Tambo, Chilca",
-      type: "Carpinteria",
-      speciality: "Armado de Muebles",
-      experience: 7,
+      type: "Pollos",
+      speciality: "Pollo Broaster",
+      logo: Viejo_Madero,
+      image_header: BG_ViejoMadero,
+      atention: "Lun-Dom de 12:00-19:30 horas",
+      experience: 32,
       home: true,
       workshop: false,
       contact:
@@ -68,11 +92,11 @@ export default [
         </a>
       ,
       featured: true,
-      titleDescription: "Armado de Muebles",
+      titleDescription: "Broasteria El Viejo Madero",
       description: 
-        "Realizamos el servicio de ensamblado de muebles en melamina, MDF, entre otros. Contamos con movilidad propia, y técnicos según zona, lo que asegura la llegada puntual al domicilio del cliente, y así garantizar el cumplimiento del servicio ofrecido. Nuestro personal cuenta con uniformes e identificación respectiva, brindando de esta manera mayor seguridad y confianza a nuestros clientes. Llámanos y un técnico especialista llegara a tu casa.",
+        "Desde 1982, tradicionalmente Huancaino, con 32 años de experiencia, somos la primera broasteria con el mejor sabor y calidad. Disfruta con nosotros el mejor sabor Huancaíno.",
       titleDescription02: "Servicio Express / Atención Inmediata",
-      description02: "Por lo general contamos con la posibilidad de realizar el armado de tu mueble el mismo día, si deseas conocer la disponibilidad de alguno de nuestros técnicos en el momento que estás leyendo esto, por favor, consúltanos mediante una llamada telefónica o un mensaje directo haciendo clic en el botón: CONTACTAR (WhatsApp) o, también por Messenger o WhatsApp, haciendo clic en el botón (¿Necesitas ayuda?) ubicado en la parte baja del lado derecho de tu pantalla.",
+      description02: "Por lo general contamos con la posibilidad de atender tus pedidos el mismo día, si deseas añadir algún pedido especial, por favor, envíanos un mensaje directo haciendo clic en el botón: CONTACTAR (WhatsApp).",
       extras: [
         "Técnicos especializados y confiables",
         "Buenos armados, grandes experiencias",
@@ -84,7 +108,7 @@ export default [
         {
           fields: {
             file: {
-              url: furniture //img13
+              url: BG_Logo_ViejoMadero //img13
             }
           }
         },
@@ -109,20 +133,113 @@ export default [
             }
           }
         }
+      ],   
+
+      // Card Content
+      card: [
+        {
+          image: Broaster01,
+          title: 'Personal',
+          info: [
+            '1/4 de Pollo Broaster',
+            '+ Papas',
+            '+ Ensalada',
+            '+ Cremas',
+          ],
+          price: 'S/ 15.50',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20personal."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: Broaster02,
+          title: 'Combo Personal',
+          info: [
+            '1/4 de Pollo Broaster',
+            '+ Papas',
+            '+ Ensalada y Cremas',
+            '+ 450ml Gaseosa (Inca/Coca)',
+          ],
+          price: 'S/ 17.50',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola,%20quiero%20el%20combo%20familiar."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: Broaster03,
+          title: 'Combo Familar',
+          info: [
+            '4/4 de Pollo Broaster',
+            '+ Porción de Papas Familiar',
+            '+ Ensalada Familiar y Cremas',
+            '+ 1.5L Gaseosa (Inca/Coca)'
+          ],
+          price: 'S/ 68.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        }
       ]
+      // End Card Content
     }
   },
+  // End Content: El Viejo Madero
+
+  // Top Content: Chifa Centro
   {
     sys: {
       id: "15"
     },
     fields: {
-      slug: "seguridad",
+      active: true,
+      slug: "comida_china",
       name: "",
       district: "Huancayo, Tambo, Chilca",
-      type: "Seguridad",
-      speciality: "Cámaras de Vigilancia",
-      experience: 6,
+      type: "Comida China",
+      speciality: "Comida China",
+      logo: Chifa_Centro,
+      image_header: BG_ChifaCentro,
+      atention: "Lun-Dom de 12:30-19:30 horas",
+      experience: 27,
       home: true,
       workshop: false,
       contact:
@@ -143,9 +260,9 @@ export default [
         </a>
       ,
       featured: true,
-      titleDescription: "Instalación de Cámaras de Vigilancia",
+      titleDescription: "Chifa Centro",
       description:
-        "Estamos preparados para desarrollar su proyecto de seguridad y vigilancia electrónica sin importar el tamaño de su hogar, comercio, institución o la complejidad de sus necesidades. Le brindamos la posibilidad al cliente de contar con un amplio espectro de soluciones. Cada solución posee características y particularidades específicas, las cuales es importante tomar en consideración, para ello contamos con la asesoría de ingenieros y técnicos especializados que lo ayudaran a tomar la decisión adecuada en la implementación de su proyecto.",
+        "Elaboramos nuestros platos con mucha honestidad, cuidando en todo momento la salud, la calidad y el buen sabor propio de un buen restaurante chino. Tenemos a su disposición diversidad de platos para que pueda disfrutar de un festín cantonés cerca de casa. Lo invitamos a experimentar con nosotros una enorme variedad de sabores y sensaciones.",
       titleDescription02: "",
       description02: "",
       extras: [
@@ -159,7 +276,7 @@ export default [
         {
           fields: {
             file: {
-              url: camera //img15
+              url: BG_Logo_ChifaCentro //img15
             }
           }
         },
@@ -184,20 +301,113 @@ export default [
             }
           }
         }
+      ],
+
+      // Card Content
+      card: [
+        {
+          image: Broaster01,
+          title: 'Combo Personal',
+          info: [
+            '1/4 de Pollo Broaster',
+            '+ Papas',
+            '+ Ensalada',
+            '+ 450ml Gaseosa (Inca/Coca)',
+          ],
+          price: 'S/ 19.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20personal."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: Broaster02,
+          title: 'Combo Familiar',
+          info: [
+            '3/4 de Pollo Broaster',
+            '+ Porción de Papas Familiar',
+            '+ Ensalada Familiar',
+            '+ 1L Gaseosa (Inca/Coca)',
+          ],
+          price: 'S/ 49.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola,%20quiero%20el%20combo%20familiar."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: Broaster03,
+          title: 'Combo Súper Familar',
+          info: [
+            '4/4 de Pollo Broaster',
+            '+ Porción de Papas Súper Familiar',
+            '+ Ensalada Familiar',
+            '+ 1.5L Gaseosa (Inca/Coca)'
+          ],
+          price: 'S/ 64.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        }
       ]
+      // End Card Content
     }
   },
+  // End Content: Chifa Centro
+
+  // Top Content: La Mora
   {
     sys: {
       id: "16"
     },
     fields: {
-      slug: "transporte",
+      slug: "comida_criolla",
+      active: true,
       name: "",
       district: "Huancayo, Tambo, Chilca",
-      type: "Transporte",
-      speciality: "Mensajeria y Paqueteria",
-      experience: 6,
+      type: "Comida Criolla",
+      speciality: "Comida Criolla",
+      logo: La_Mora,
+      image_header: BG_LaMora,
+      atention: "Lun-Dom de 16:00-22:00 horas",
+      experience: 10,
       home: true,
       workshop: false,
       contact:
@@ -218,9 +428,9 @@ export default [
         </a>
       ,
       featured: true,
-      titleDescription: "Servicio de mensajería y paquetería",
+      titleDescription: '"La Mora" Restaurant-Cafe',
       description:
-        "A través de esta web puedes pedir cualquier producto (posible de ser transportado en moto lineal), y recibirlo en cuestión de minutos en el lugar que decidas en la ciudad de Huancayo. Solucionamos tus pedidos y traslado de artículos /productos, documentos, comida, ropa, libros, pedidos de restaurantes que no cuentan con Delivery propio, etc. de una manera rápida, segura y confiable. Estamos conectados tecnológicamente y a nuestra plataforma web, en todo momento, y estaremos donde tú nos requieras; estamos dispuestos a brindarte el mejor servicio y cumplir con la entrega de tu pedido eficientemente. ¡No te compliques! Y recupera el tiempo perdido.",
+        "Bienvenidos a “La Mora”, Somos un espacio de sencillez y magia: Sencillo en el servicio y Mágico en las comidas y bebidas. Somos su mejor opción para quien desea una experiencia gastronómica única y conoce los sabores del verdadero Perú como en casa, donde siempre contarán con la atención personal, amable y cálida de estos sus servidores.",
       titleDescription02: "",
       description02: "",
       extras: [
@@ -234,7 +444,7 @@ export default [
         {
           fields: {
             file: {
-              url: delivery1 //img14
+              url: BG_Logo_LaMora //img14
             }
           }
         },
@@ -259,9 +469,432 @@ export default [
             }
           }
         }
+      ],
+
+      // Card Content
+      card: [
+        {
+          image: Broaster01,
+          title: 'Combo Personal',
+          info: [
+            '1/4 de Pollo Broaster',
+            '+ Papas',
+            '+ Ensalada',
+            '+ 450ml Gaseosa (Inca/Coca)',
+          ],
+          price: 'S/ 19.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20personal."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: Broaster02,
+          title: 'Combo Familiar',
+          info: [
+            '3/4 de Pollo Broaster',
+            '+ Porción de Papas Familiar',
+            '+ Ensalada Familiar',
+            '+ 1L Gaseosa (Inca/Coca)',
+          ],
+          price: 'S/ 49.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola,%20quiero%20el%20combo%20familiar."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: Broaster03,
+          title: 'Combo Súper Familar',
+          info: [
+            '4/4 de Pollo Broaster',
+            '+ Porción de Papas Súper Familiar',
+            '+ Ensalada Familiar',
+            '+ 1.5L Gaseosa (Inca/Coca)'
+          ],
+          price: 'S/ 64.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        }
       ]
+      // End Card Content
     }
   },
+  // End Content: La Mora
+
+  // Top Content: Carnivoro
+  {
+    sys: {
+      id: "17"
+    },
+    fields: {
+      slug: "comida_rapida",
+      active: true,
+      name: "",
+      district: "Huancayo, Tambo, Chilca",
+      type: "Comida Rapida",
+      speciality: "Comida Rapida",
+      logo: Carnivoro,
+      image_header: BG_Carnivoro,
+      atention: "Lun-Dom de 16:00-22:00 horas",
+      experience: 10,
+      home: true,
+      workshop: false,
+      contact:
+        <a
+          className="btn-primary-slider"
+          href="https://wa.me/51980895124?text=Mensajería%20y%20paquetería:%20Hola,%20quiero%20información."
+          target="_blank"
+          style={{ textAlign: "center", width: "100%" }}
+        >
+          <FaWhatsapp
+            style={{
+              fontSize: "1.4rem",
+              verticalAlign: "text-bottom",
+              marginRight: "5px"
+            }}
+          />
+          Contactar
+        </a>
+      ,
+      featured: true,
+      titleDescription: 'Carnivoro',
+      description:
+        "Especialistas en Hamburguesas 100% caseras, combinadas con los mejores insumos y sabores que la gastronomía peruana nos brinda.",
+      titleDescription02: "",
+      description02: "",
+      extras: [
+        "Atención express",
+        "Tu solución de transporte a un Click",
+        "Nuestros precios son muy competitivos",
+        "Te llevamos a domicilio lo que quieras",
+        "Nos adaptamos a la necesidad de cada cliente"
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: BG_Logo_Carnivoro //img14
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: delivery1
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: delivery2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: delivery3
+            }
+          }
+        }
+      ],
+
+      // Card Content
+      card: [
+        {
+          image: Broaster01,
+          title: 'Royal',
+          type: 'Hamburguesa', 
+          info: [
+            'Montado con queso y huevo',
+            '+ 100GR de papas fritas nativas huamantanga, puma maqui y amarilla',
+          ],
+          price: 'S/ 12.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20personal."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: Broaster02,
+          title: 'A lo Pobre',
+          type: 'Hamburguesa', 
+          info: [
+            'Montado con platano y huevo',
+            '+ 100GR de papas fritas nativas huamantanga, puma maqui y amarilla',
+          ],
+          price: 'S/ 12.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola,%20quiero%20el%20combo%20familiar."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: Broaster03,
+          title: 'Hawaiana',
+          type: 'Hamburguesa', 
+          info: [
+            'Montado con piña golden y queso',
+            '+ 100GR de papas fritas nativas huamantanga, puma maqui y amarilla',
+          ],
+          price: 'S/ 12.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: Broaster03,
+          title: 'Cheese Burguer',
+          type: 'Hamburguesa', 
+          info: [
+            'Montado con queso holandes',
+            '+ 100GR de papas fritas nativas huamantanga, puma maqui y amarilla',
+          ],
+          price: 'S/ 12.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: Broaster03,
+          title: 'Cheese Bacone',
+          type: 'Hamburguesa', 
+          info: [
+            'Montado con queso holandes y tocino',
+            '+ 100GR de papas fritas nativas huamantanga, puma maqui y amarilla',
+          ],
+          price: 'S/ 12.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: Broaster03,
+          title: 'BBQ',
+          type: 'Alitas o Wings',
+          info: [
+            'Bañadas en salsa dulce ahumada',
+            '+ 150GR de papas fritas nativas huamantanga, puma maqui y amarilla',
+          ],
+          price: 'S/ 12.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: Broaster03,
+          title: 'Picantes',
+          type: 'Alitas o Wings',
+          info: [
+            'Bañadas en salsa de miel picante',
+            '+ 150GR de papas fritas nativas huamantanga, puma maqui y amarilla',
+          ],
+          price: 'S/ 12.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: Broaster03,
+          title: 'Clásica',
+          type: 'Salchipapa',
+          info: [
+            'A base de hot-dog de ternera',
+            '+ 200GR de papas fritas nativas huamantanga, puma maqui y amarilla',
+          ],
+          price: 'S/ 10.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: Broaster03,
+          title: 'Malcriada',
+          type: 'Salchipapa',
+          info: [
+            'A base de chorizo precodico, finas hierbas y picante',
+            '+ 200GR de papas fritas nativas huamantanga, puma maqui y amarilla',
+          ],
+          price: 'S/ 13.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        }
+      ]
+      // End Card Content
+    }
+  },
+  // End Content: Carnivoro
+
+  // Top Content: La Mora
+  // End Content: La Mora
+
+  // Top Content: La Mora
+  // End Content: La Mora
+
+  // Top Content: La Mora
+  // End Content: La Mora
+
+  // Top Content: La Mora
+  // End Content: La Mora
+
+  // Top Content: La Mora
+  // End Content: La Mora
 
   // Rooms
   /*

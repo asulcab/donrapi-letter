@@ -1,13 +1,77 @@
 import React, { Component } from "react";
+// Component Card
+import ReactDOM from "react-dom";
 import defaultBcg from "../images/room-1.jpeg";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import { RoomContext } from "../context";
-import { FaWhatsapp } from "react-icons/fa";
+
+// Component Card
+import { withStyles } from "@material-ui/core/styles";
+import Avatar from "@material-ui/core/Avatar";
+import Card from "@material-ui/core/Card";
+import CardMedia from "@material-ui/core/CardMedia";
+import CardContent from "@material-ui/core/CardContent";
+import Divider from "@material-ui/core/Divider";
+import Typography from "@material-ui/core/Typography";
 
 import StyledHero from "../components/StyledHero";
-export default class SingleRoom extends Component {
+
+// Style Card
+import "../css/styles-card.css";
+const styles = theme => (
+  {
+    card: {
+      width: 300,
+      margin: "auto",
+      transition: "0.3s",
+      boxShadow: "0 8px 40px -12px rgba(0,0,0,1)",
+      "&:hover": {
+        boxShadow: "0 16px 70px -12.125px rgba(0,0,0,1)"
+      }
+    },
+    media: {
+      paddingTop: "56.25%"
+    },
+    title: {
+      fontFamily: "'Dancing Script', sans-serif, cursive",
+      color: "#FFFFFF",
+      fontSize: "40px",
+      fontWeight: 300,
+      lineHeight: 1.5,
+    },
+    type: {
+      color: "#999999",
+      fontStyle: "italic",
+    },
+    content: {
+      textAlign: "left",
+      padding: theme.spacing.unit * 3
+    },
+    divider: {
+      margin: `${theme.spacing.unit * 3}px 0`,
+    },
+    heading: {
+      fontWeight: "bold"
+    },
+    subheading: {
+      lineHeight: 1.8
+    },
+    avatar: {
+      display: "inline-block",
+      border: "2px solid white",
+      "&:not(:first-of-type)": {
+        marginLeft: -theme.spacing.unit
+      }
+    }
+  }
+);
+
+class SingleRoom extends Component {
+  state = {
+    searchNodes:""
+  };
   constructor(props) {
     super(props);
     console.log(this.props);
@@ -22,6 +86,7 @@ export default class SingleRoom extends Component {
   //   console.log(this.props);
   // }
   render() {
+    const { classes } = this.props;
     const { getRoom } = this.context;
     const room = getRoom(this.state.slug);
 
@@ -36,10 +101,12 @@ export default class SingleRoom extends Component {
       );
     }
     const {
+      active,
       name,
       district,
       type,
       speciality,
+      image_header,
       experience,
       home,
       workshop,
@@ -51,26 +118,33 @@ export default class SingleRoom extends Component {
       capacity,
       size,
       extras,
-      images
+      images,
+
+      // Card define
+      card,
+      logo,
+      atention
     } = room;
     const [main, ...defaultImages] = images;
     console.log(defaultImages);
 
     return (
       <>
-        <StyledHero img={images[0] || this.state.defaultBcg}>
+        <StyledHero className="headers" img={image_header || this.state.defaultBcg}>{/* images[0] */}
           <Banner title={`${speciality}`}>
-            <Link to="/" className="btn-primary">
-              volver al inicio
+            <Link to="/rooms" className="btn-primary">
+              volver a restaurantes
             </Link>
           </Banner>
         </StyledHero>
+        {(active === true) ? 
         <section className="single-room">
-          <div className="single-room-images">
+          <div className="logCom"><img src={logo} className="log" style={{display: "block", margin: "auto"}} /></div>
+          {/* <div className="single-room-images">
             {defaultImages.map((item, index) => (
               <img key={index} src={item} alt={name} />
             ))}
-          </div>
+          </div> */}
           <div className="single-room-info">
             <article className="desc">
               {(titleDescription != '') ? <h3>{titleDescription}</h3> : <h3>Detalles</h3>}
@@ -81,7 +155,7 @@ export default class SingleRoom extends Component {
             <article className="info">
               <h3>Info</h3>
               {(name != '')?<h6>Nombres: {name}</h6>:''}
-              <h6>Área: {type}</h6>
+              {/* <h6>Área: {type}</h6> */}
               {(experience > 0) ? <h6>Experiencia: {experience} años</h6> : ''}
               <h6>Especialdad: {speciality}</h6>
               {/* <h6>Tamaño : {size} SQFT</h6> */}
@@ -105,6 +179,58 @@ export default class SingleRoom extends Component {
             </article>
           </div>
         </section>
+        : ''}
+
+        {/* Section Card */}
+        <section className="cards">
+          <div className="cards-overlay"></div>
+          <div className="title">
+            {/* <span>- {speciality} -</span> */}
+            <span>- Carta de precios -</span>
+            {/* <div className="logCom"><img src={logo} className="log" /></div> */}
+            <div className="content-atention">
+              <span className="atention">🔥Delivery: {atention} </span>
+            </div>
+          </div>
+          <div className="App">
+            {card.map(item => {
+              return (
+                <article key={`item-${item.title}`}>
+                  <Card className={classes.card}>
+                    <CardMedia className={styles.media} image={item.image} />
+                  </Card>
+                  <Card className={classes.card}>
+                    <CardMedia className={classes.media} image={item.image} />
+                    <CardContent className={classes.content}>
+                      <Typography className={'MuiTypography--heading'} variant={'h6'} gutterBottom>
+                        {item.title}
+                      </Typography>
+                      <Typography className={classes.type} variant={'subtitle1'} gutterBottom>
+                        {item.type}
+                      </Typography>
+                      {(item.info).map((item) => (
+                        <Typography className={'MuiTypography--heading'} variant={'subtitle2'} gutterBottom>
+                          {item}
+                        </Typography>
+                      ))}
+                      <Typography className={"MuiTypography--subheading"} variant={"subtitle2"} gutterBottom>
+                        <h3 style={{ marginTop: "0.5em", marginBottom: "0.5em" }}>
+                          Precio: {item.price}
+                        </h3>
+                      </Typography>
+                      <Divider className={classes.divider} light />
+                      <div style={{ textAlign: "center" }}>
+                        {item.button}
+                      </div>
+                    </CardContent>
+                  </Card>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+        {/* End Section Card */}
+        
         <section className="room-extras">
           <div>
             <h6>Extras </h6>
@@ -119,3 +245,4 @@ export default class SingleRoom extends Component {
     );
   }
 }
+export default withStyles(styles)(SingleRoom);

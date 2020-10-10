@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { FaAlignRight, FaMotorcycle, FaPizzaSlice, FaUtensils } from "react-icons/fa";
+import { FaAlignRight, FaMotorcycle, FaPizzaSlice, FaUtensils, FaTools, FaPencilRuler, FaCubes } from "react-icons/fa";
 import logo from "../images/logo.svg";
 import Contact from "./Contact";
 export default class Navbar extends Component {
@@ -15,7 +15,7 @@ export default class Navbar extends Component {
       <nav className="navbar">
         <div className="nav-center">
           <div className="nav-header">
-            <Link to="/">
+            <Link to="/rooms">
               <img src={logo} alt="Beach Resort" />
             </Link>
             <button
@@ -29,17 +29,23 @@ export default class Navbar extends Component {
           <ul
             className={this.state.isOpen ? "nav-links show-nav" : "nav-links"}
           >
-            <li>
+            {/* <li>
               <Link to="/#">Inicio</Link>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <Link to="/nosotros">Nosotros</Link>
-            </li>
+            </li> */}
+            {/* <li>
+              <Link to="/rooms">Servicios</Link>
+            </li> */}
+            {/* <li>
+              <Link to="/food-delivery" ><FaCubes className="nav-icon-delivery" />Proyectos</Link>
+            </li> */}
             <li>
-              <Link to="/food-delivery" style={{ color: "#ffd800" }}><FaUtensils className="nav-icon-delivery" />Delivery Food!</Link>
+              <Link to="/rooms" ><FaUtensils className="nav-icon-delivery" />Restaurantes</Link>
             </li>
             {/* <li>
-              <Link to="/rooms">Especialistas</Link>
+              <Link to="/food-delivery" style={{ color: "#ffd800" }}><FaUtensils className="nav-icon-delivery" />Delivery Food!</Link>
             </li> */}
           </ul>
           <Contact />

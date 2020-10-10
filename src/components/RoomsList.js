@@ -6,7 +6,7 @@ const RoomsList = ({ rooms }) => {
     return (
       <div className="empty-search">
         <span><FaFrown color="#ccc" fontSize="7rem"/></span>
-        <h3>Lamentablemente no hay especialistas que coincidan con sus parámetros de búsqueda</h3>
+        <h3>Lamentablemente no hay restaurantes que coincidan con sus parámetros de búsqueda</h3>
       </div>
     );
   }

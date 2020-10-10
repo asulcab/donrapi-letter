@@ -6,8 +6,8 @@ import RoomsContainer from "../components/RoomsContainer";
 const Rooms = () => {
   return (
     <>
-      <Hero hero="roomsHero">
-        <Banner title="Especialistas">
+      <Hero hero="food">
+        <Banner title="Restaurantes">
           <Link to="/" className="btn-primary">
             volver al inicio
           </Link>
