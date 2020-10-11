@@ -29,7 +29,7 @@ import BG_Logo_ViejoMadero from "./images/BG_logo_viejomadero.jpeg";
 import furniture1 from "./images/details-furniture-1.jpeg";
 import furniture2 from "./images/details-furniture-2.jpeg";
 import furniture3 from "./images/details-furniture-3.jpeg";
-import BG_ChifaCentro from "./images/BG_chifacentro.png";
+import BG_ChifaCentro from "./images/BG_chifacentro.jpeg";
 import BG_Logo_ChifaCentro from "./images/BG_logo_chifacentro.jpeg";
 import cam1 from "./images/details-cam-1.jpeg";
 import cam2 from "./images/details-cam-2.jpeg";

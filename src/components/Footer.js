@@ -9,9 +9,9 @@ function Footer() {
     <footer>
       <section>
         <a>
-          De Huancayo con 
+          DonRapi | Delivery con el  
           <span> <FaHeart /> </span>
-          para el mundo
+          de siempre.
         </a>
       </section>
     </footer>
