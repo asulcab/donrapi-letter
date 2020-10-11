@@ -43,6 +43,19 @@ import Viejo_Madero from "./images/logo.png";
 import Chifa_Centro from "./images/logo_chifa_centro.png";
 import La_Mora from "./images/logo_la_mora.png";
 import Carnivoro from "./images/logo_carnivoro.png";
+
+// Mamá Meche
+import Mama_Meche from "./images/logo_mama_meche.png";
+import BG_Logo_MamaMeche from "./images/BG_logo_mamameche.jpeg";
+import BG_MamaMeche from "./images/BG_mamameche.jpeg";
+// Mamá Meche - Image Card
+import MM1 from "./images/mamameche/1-sanguche-de-pollo.jpeg";
+import MM2 from "./images/mamameche/2-sanguche-de-asado.jpeg";
+import MM3 from "./images/mamameche/3-sanguche-de-pavo.jpeg";
+import MM4 from "./images/mamameche/4-chicarron-mamameche.jpeg";
+import MM5 from "./images/mamameche/5-lomo-saltado.jpeg";
+import MM6 from "./images/mamameche/6-beef-cheedar.jpeg";
+
 // Image Card
 import Broaster01 from "./images/broaster01.jpeg";
 import Broaster02 from "./images/broaster02.jpeg";
@@ -98,11 +111,11 @@ export default [
       titleDescription02: "Servicio Express / Atención Inmediata",
       description02: "Por lo general contamos con la posibilidad de atender tus pedidos el mismo día, si deseas añadir algún pedido especial, por favor, envíanos un mensaje directo haciendo clic en el botón: CONTACTAR (WhatsApp).",
       extras: [
-        "Técnicos especializados y confiables",
-        "Buenos armados, grandes experiencias",
-        "Dejamos el producto, como te lo imaginaste",
-        "Suministro de piezas de melamina y vidrio",
-        "Suministro de accesorios en general"
+        "Atención express",
+        "Tu solución de transporte a un Click",
+        "Nuestros precios son muy competitivos",
+        "Te llevamos a domicilio lo que quieras",
+        "Nos adaptamos a la necesidad de cada cliente"
       ],
       images: [
         {
@@ -266,11 +279,11 @@ export default [
       titleDescription02: "",
       description02: "",
       extras: [
-        "Acceso remoto desde internet",
-        "Bajo costo de mantenimiento",
-        "Asesoría y soporte técnico integral",
-        "Soluciones de acuerdo a sus necesidades",
-        "Capacitación en el sistema de vigilancia"
+        "Atención express",
+        "Tu solución de transporte a un Click",
+        "Nuestros precios son muy competitivos",
+        "Te llevamos a domicilio lo que quieras",
+        "Nos adaptamos a la necesidad de cada cliente"
       ],
       images: [
         {
@@ -306,7 +319,7 @@ export default [
       // Card Content
       card: [
         {
-          image: Broaster01,
+          image: BG_Logo_ChifaCentro,
           title: 'Combo Personal',
           info: [
             '1/4 de Pollo Broaster',
@@ -333,7 +346,7 @@ export default [
             </a>
         },
         {
-          image: Broaster02,
+          image: BG_Logo_ChifaCentro,
           title: 'Combo Familiar',
           info: [
             '3/4 de Pollo Broaster',
@@ -360,7 +373,7 @@ export default [
             </a>
         },
         {
-          image: Broaster03,
+          image: BG_Logo_ChifaCentro,
           title: 'Combo Súper Familar',
           info: [
             '4/4 de Pollo Broaster',
@@ -474,13 +487,17 @@ export default [
       // Card Content
       card: [
         {
-          image: Broaster01,
-          title: 'Combo Personal',
+          image: BG_Logo_LaMora,
+          title: 'Económico',
+          type: 'Menú de Casa',
           info: [
-            '1/4 de Pollo Broaster',
-            '+ Papas',
-            '+ Ensalada',
-            '+ 450ml Gaseosa (Inca/Coca)',
+            'Entrada:',
+            '1 - Arestú de Pollo',
+            '2 - Papa a la Huancaína',
+            'Fondo:',
+            '- Patita con Maní',
+            'Bebida:',
+            '- Chicha morada',
           ],
           price: 'S/ 19.00',
           button:
@@ -501,13 +518,20 @@ export default [
             </a>
         },
         {
-          image: Broaster02,
-          title: 'Combo Familiar',
+          image: BG_Logo_LaMora,
+          title: 'Ejecutivo I',
+          type: 'Menú de Casa',
           info: [
-            '3/4 de Pollo Broaster',
-            '+ Porción de Papas Familiar',
-            '+ Ensalada Familiar',
-            '+ 1L Gaseosa (Inca/Coca)',
+            'Entrada:',
+            '1 - Arestú de Pollo',
+            '2 - Papa a la Huancaína',
+            'Fondo:',
+            '1 - Chicharrón Colorado',
+            '2 - Pollo al Maní',
+            '3 - Arroz con Pollo',
+            '4 - Pollo al Horno',
+            'Bebida:',
+            '- Chicha morada',
           ],
           price: 'S/ 49.00',
           button:
@@ -528,13 +552,20 @@ export default [
             </a>
         },
         {
-          image: Broaster03,
-          title: 'Combo Súper Familar',
+          image: BG_Logo_LaMora,
+          title: 'Ejecutivo II',
+          type: 'Menú de Casa',
           info: [
-            '4/4 de Pollo Broaster',
-            '+ Porción de Papas Súper Familiar',
-            '+ Ensalada Familiar',
-            '+ 1.5L Gaseosa (Inca/Coca)'
+            'Entrada:',
+            '1 - Arestú de Pollo',
+            '2 - Papa a la Huancaína',
+            'Fondo:',
+            '1 - Asado de Ternera',
+            '2 - Tallarines con Asado de Pollo',
+            '3 - Pollo al Cilindro',
+            '4 - Cuy Chactado',
+            'Bebida:',
+            '- Chicha morada',
           ],
           price: 'S/ 64.00',
           button:
@@ -642,7 +673,7 @@ export default [
       // Card Content
       card: [
         {
-          image: Broaster01,
+          image: BG_Logo_Carnivoro,
           title: 'Royal',
           type: 'Hamburguesa', 
           info: [
@@ -668,7 +699,7 @@ export default [
             </a>
         },
         {
-          image: Broaster02,
+          image: BG_Logo_Carnivoro,
           title: 'A lo Pobre',
           type: 'Hamburguesa', 
           info: [
@@ -694,7 +725,7 @@ export default [
             </a>
         },
         {
-          image: Broaster03,
+          image: BG_Logo_Carnivoro,
           title: 'Hawaiana',
           type: 'Hamburguesa', 
           info: [
@@ -720,7 +751,7 @@ export default [
             </a>
         },
         {
-          image: Broaster03,
+          image: BG_Logo_Carnivoro,
           title: 'Cheese Burguer',
           type: 'Hamburguesa', 
           info: [
@@ -746,7 +777,7 @@ export default [
             </a>
         },
         {
-          image: Broaster03,
+          image: BG_Logo_Carnivoro,
           title: 'Cheese Bacone',
           type: 'Hamburguesa', 
           info: [
@@ -772,7 +803,7 @@ export default [
             </a>
         },
         {
-          image: Broaster03,
+          image: BG_Logo_Carnivoro,
           title: 'BBQ',
           type: 'Alitas o Wings',
           info: [
@@ -798,7 +829,7 @@ export default [
             </a>
         },
         {
-          image: Broaster03,
+          image: BG_Logo_Carnivoro,
           title: 'Picantes',
           type: 'Alitas o Wings',
           info: [
@@ -824,7 +855,7 @@ export default [
             </a>
         },
         {
-          image: Broaster03,
+          image: BG_Logo_Carnivoro,
           title: 'Clásica',
           type: 'Salchipapa',
           info: [
@@ -850,7 +881,7 @@ export default [
             </a>
         },
         {
-          image: Broaster03,
+          image: BG_Logo_Carnivoro,
           title: 'Malcriada',
           type: 'Salchipapa',
           info: [
@@ -881,7 +912,241 @@ export default [
   },
   // End Content: Carnivoro
 
-  // Top Content: La Mora
+  // Top Content: Mamá Meche
+  {
+    sys: {
+      id: "17"
+    },
+    fields: {
+      slug: "sanguche",
+      active: true,
+      name: "",
+      district: "Huancayo, Tambo, Chilca",
+      type: "Comida Rapida",
+      speciality: "Comida Rapida",
+      logo: Mama_Meche,
+      image_header: BG_MamaMeche,
+      atention: "Lun-Dom de 16:00-22:00 horas",
+      experience: 10,
+      home: true,
+      workshop: false,
+      contact:
+        <a
+          className="btn-primary-slider"
+          href="https://wa.me/51980895124?text=Mensajería%20y%20paquetería:%20Hola,%20quiero%20información."
+          target="_blank"
+          style={{ textAlign: "center", width: "100%" }}
+        >
+          <FaWhatsapp
+            style={{
+              fontSize: "1.4rem",
+              verticalAlign: "text-bottom",
+              marginRight: "5px"
+            }}
+          />
+          Contactar
+        </a>
+      ,
+      featured: true,
+      titleDescription: 'Sanguchería "Mamá Meche"',
+      description:
+        "La sanguchería criolla de Huancayo. Disfruta los mejores desayunos espectaculares al estilo Mamá Meche!",
+      titleDescription02: "",
+      description02: "",
+      extras: [
+        "Atención express",
+        "Tu solución de transporte a un Click",
+        "Nuestros precios son muy competitivos",
+        "Te llevamos a domicilio lo que quieras",
+        "Nos adaptamos a la necesidad de cada cliente"
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: BG_Logo_MamaMeche //img14
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: delivery1
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: delivery2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: delivery3
+            }
+          }
+        }
+      ],
+
+      // Card Content
+      card: [
+        {
+          image: MM1,
+          title: 'Pollo Deshilachado',
+          type: 'Sanguche',
+          info: [
+            'Sanguche al estilo Mamá Meche',
+          ],
+          price: 'S/ 10.90',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20personal."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: MM2,
+          title: 'Sanguche con Asado',
+          type: 'Sanguche',
+          info: [
+            'Sanguche al estilo Mamá Meche',
+          ],
+          price: 'S/ 12.90',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola,%20quiero%20el%20combo%20familiar."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: MM3,
+          title: 'Sanguche de Pavo',
+          type: 'Sanguche',
+          info: [
+            'Sanguche al estilo Mamá Meche',
+          ],
+          price: 'S/ 13.90',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: MM4,
+          title: 'Chicharrón Mamá Meche',
+          type: 'Sanguche',
+          info: [
+            'Sanguche al estilo Mamá Meche',
+          ],
+          price: 'S/ 13.90',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: MM5,
+          title: 'Ciabatta con Lomo Saltado',
+          type: 'Sanguche',
+          info: [
+            'Sanguche al estilo Mamá Meche',
+          ],
+          price: 'S/ 15.90',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: MM6,
+          title: 'Beef Cheedar',
+          type: 'Sanguche',
+          info: [
+            'Lomo Fino Beef Cheedar con papas',
+          ],
+          price: 'S/ 15.90',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        }
+      ]
+      // End Card Content
+    }
+  },
   // End Content: La Mora
 
   // Top Content: La Mora
