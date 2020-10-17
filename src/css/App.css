@@ -146,7 +146,7 @@ h6 {
 .nav-icon {
   font-size: 1.5rem;
   /*color: var(--primaryColor);*/
-  color: #ffd800;
+  color: #fff;
 }
 .nav-icon-delivery {
   font-size: 1.5rem;
@@ -186,7 +186,7 @@ h6 {
 }
 
 .show-nav {
-  height: 155.4px;/* 100px */
+  height: 56px;/* 100px | 155.4px*/
   /*height: auto;*/
 }
 @media screen and (min-width: 768px) {
@@ -278,11 +278,11 @@ h6 {
     /* border-radius: 0 0 5px 5px; */
   }
   .nav-links a {
-    border-top: 1px solid #172a35;
+    /* border-top: 1px solid #172a35; */
   }
   .nav-header {
   padding-bottom: 10px;
-  border-bottom: 1px solid #ffd800;
+  border-bottom: 1px solid #370068; /* #ffd800 */
   }
 }
 /* end contact*/
@@ -352,13 +352,13 @@ h6 {
 /* end of about us */
 /* food delivery */
 .food {
-  background-image: none;/* url("../images/food.jpeg") */
+  background-image: url("../images/1BG_chifacentro.png");/* none */
   background-color: red;
   min-height: 60vh;
   position: relative;
 }
 .food h1 {
-  color: #ffee00;
+  color: #fff;/* #ffee00 */
 }
 .food::before {
   content: '';

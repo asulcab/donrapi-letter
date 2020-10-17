@@ -56,6 +56,11 @@ import MM4 from "./images/mamameche/4-chicarron-mamameche.jpeg";
 import MM5 from "./images/mamameche/5-lomo-saltado.jpeg";
 import MM6 from "./images/mamameche/6-beef-cheedar.jpeg";
 
+// Chifa Palacio Chino
+import Palacio_Chino from "./images/logo_palaciochino.png";
+import BG_Logo_PalacioChino from "./images/BG_logo_palaciochino.jpeg";
+import BG_PalacioChino from "./images/BG_palaciochino.jpeg";
+
 // Image Card
 import Broaster01 from "./images/broaster01.jpeg";
 import Broaster02 from "./images/broaster02.jpeg";
@@ -90,7 +95,7 @@ export default [
       contact:
         <a
           className="btn-primary-slider"
-          href="https://wa.me/51980895124?text=Armado%20de%20Muebles:%20Hola,%20quiero%20información."
+          href="https://wa.me/51956406194?text=Hola,%20DonRapi,%20por%20favor %20quisiera%20ver%20la%20carta%20y%20precios%20del%20Viejo%20Madero."
           target="_blank"
           style={{ textAlign: "center", width: "100%" }}
         >
@@ -101,15 +106,14 @@ export default [
               marginRight: "5px"
             }}
           />
-          Contactar
+          Pedir Carta
         </a>
       ,
       featured: true,
       titleDescription: "Broasteria El Viejo Madero",
-      description: 
-        "Desde 1982, tradicionalmente Huancaino, con 32 años de experiencia, somos la primera broasteria con el mejor sabor y calidad. Disfruta con nosotros el mejor sabor Huancaíno.",
+      description: "Desde 1982, tradicionalmente Huancaino, con 32 años de experiencia, somos la primera broasteria con el mejor sabor y calidad. Disfruta con nosotros el mejor sabor Huancaíno.",
       titleDescription02: "Servicio Express / Atención Inmediata",
-      description02: "Por lo general contamos con la posibilidad de atender tus pedidos el mismo día, si deseas añadir algún pedido especial, por favor, envíanos un mensaje directo haciendo clic en el botón: CONTACTAR (WhatsApp).",
+      description02: "Hola, te presentamos la carta y precios de los productos más pedidos, por lo general contamos con la posibilidad de atender tus pedidos el mismo día, si deseas añadir algún pedido especial, o deseas que te enviemos la carta completa y precios, por favor, envíanos un mensaje directo haciendo clic en el botón: PEDIR CARTA (WhatsApp).",
       extras: [
         "Atención express",
         "Tu solución de transporte a un Click",
@@ -163,7 +167,7 @@ export default [
           button:
             <a
               className="btn-primary-slider"
-              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20personal."
+              href="https://wa.me/51956406194?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20personal."
               target="_blank"
               style={{ textAlign: "center" }}
             >
@@ -190,7 +194,7 @@ export default [
           button:
             <a
               className="btn-primary-slider"
-              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola,%20quiero%20el%20combo%20familiar."
+              href="https://wa.me/51956406194?text=Pedido%20broaster:%20Hola,%20quiero%20el%20combo%20familiar."
               target="_blank"
               style={{ textAlign: "center" }}
             >
@@ -217,7 +221,7 @@ export default [
           button:
             <a
               className="btn-primary-slider"
-              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
+              href="https://wa.me/51956406194?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
               target="_blank"
               style={{ textAlign: "center" }}
             >
@@ -238,171 +242,170 @@ export default [
   // End Content: El Viejo Madero
 
   // Top Content: Chifa Centro
-  {
-    sys: {
-      id: "15"
-    },
-    fields: {
-      active: true,
-      slug: "comida_china",
-      name: "",
-      district: "Huancayo, Tambo, Chilca",
-      type: "Comida China",
-      speciality: "Comida China",
-      logo: Chifa_Centro,
-      image_header: BG_ChifaCentro,
-      atention: "Lun-Dom de 12:30-19:30 horas",
-      experience: 27,
-      home: true,
-      workshop: false,
-      contact:
-        <a
-          className="btn-primary-slider"
-          href="https://wa.me/51980895124?text=Instalación%20de%20Cámaras:%20Hola,%20quiero%20información."
-          target="_blank"
-          style={{ textAlign: "center", width: "100%" }}
-        >
-          <FaWhatsapp
-            style={{
-              fontSize: "1.4rem",
-              verticalAlign: "text-bottom",
-              marginRight: "5px"
-            }}
-          />
-          Contactar
-        </a>
-      ,
-      featured: true,
-      titleDescription: "Chifa Centro",
-      description:
-        "Elaboramos nuestros platos con mucha honestidad, cuidando en todo momento la salud, la calidad y el buen sabor propio de un buen restaurante chino. Tenemos a su disposición diversidad de platos para que pueda disfrutar de un festín cantonés cerca de casa. Lo invitamos a experimentar con nosotros una enorme variedad de sabores y sensaciones.",
-      titleDescription02: "",
-      description02: "",
-      extras: [
-        "Atención express",
-        "Tu solución de transporte a un Click",
-        "Nuestros precios son muy competitivos",
-        "Te llevamos a domicilio lo que quieras",
-        "Nos adaptamos a la necesidad de cada cliente"
-      ],
-      images: [
-        {
-          fields: {
-            file: {
-              url: BG_Logo_ChifaCentro //img15
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: cam1
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: cam2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: cam3
-            }
-          }
-        }
-      ],
+  // {
+  //   sys: {
+  //     id: "15"
+  //   },
+  //   fields: {
+  //     active: false,
+  //     slug: "comida_china",
+  //     name: "",
+  //     district: "Huancayo, Tambo, Chilca",
+  //     type: "Comida China",
+  //     speciality: "Comida China",
+  //     logo: Chifa_Centro,
+  //     image_header: BG_ChifaCentro,
+  //     atention: "Lun-Dom de 12:30-19:30 horas",
+  //     experience: 27,
+  //     home: true,
+  //     workshop: false,
+  //     contact:
+  //       <a
+  //         className="btn-primary-slider"
+  //         href="https://wa.me/51956406194?text=Hola,%20DonRapi,%20por%20favor %20quisiera%20ver%20la%20carta%20y%20precios%20del%20Chifa%20Centro."
+  //         target="_blank"
+  //         style={{ textAlign: "center", width: "100%" }}
+  //       >
+  //         <FaWhatsapp
+  //           style={{
+  //             fontSize: "1.4rem",
+  //             verticalAlign: "text-bottom",
+  //             marginRight: "5px"
+  //           }}
+  //         />
+  //         Pedir Carta
+  //       </a>
+  //     ,
+  //     featured: true,
+  //     titleDescription: "Chifa Centro",
+  //     description: "Elaboramos nuestros platos con mucha honestidad, cuidando en todo momento la salud, la calidad y el buen sabor propio de un buen restaurante chino. Tenemos a su disposición diversidad de platos para que pueda disfrutar de un festín cantonés cerca de casa. Lo invitamos a experimentar con nosotros una enorme variedad de sabores y sensaciones.",
+  //     titleDescription02: "Servicio Express / Atención Inmediata",
+  //     description02: "Hola, te presentamos la carta y precios de los productos más pedidos, por lo general contamos con la posibilidad de atender tus pedidos el mismo día, si deseas añadir algún pedido especial, o deseas que te enviemos la carta completa y precios, por favor, envíanos un mensaje directo haciendo clic en el botón: PEDIR CARTA (WhatsApp).",
+  //     extras: [
+  //       "Atención express",
+  //       "Tu solución de transporte a un Click",
+  //       "Nuestros precios son muy competitivos",
+  //       "Te llevamos a domicilio lo que quieras",
+  //       "Nos adaptamos a la necesidad de cada cliente"
+  //     ],
+  //     images: [
+  //       {
+  //         fields: {
+  //           file: {
+  //             url: BG_Logo_ChifaCentro //img15
+  //           }
+  //         }
+  //       },
+  //       {
+  //         fields: {
+  //           file: {
+  //             url: cam1
+  //           }
+  //         }
+  //       },
+  //       {
+  //         fields: {
+  //           file: {
+  //             url: cam2
+  //           }
+  //         }
+  //       },
+  //       {
+  //         fields: {
+  //           file: {
+  //             url: cam3
+  //           }
+  //         }
+  //       }
+  //     ],
 
-      // Card Content
-      card: [
-        {
-          image: BG_Logo_ChifaCentro,
-          title: 'Combo Personal',
-          info: [
-            '1/4 de Pollo Broaster',
-            '+ Papas',
-            '+ Ensalada',
-            '+ 450ml Gaseosa (Inca/Coca)',
-          ],
-          price: 'S/ 19.00',
-          button:
-            <a
-              className="btn-primary-slider"
-              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20personal."
-              target="_blank"
-              style={{ textAlign: "center" }}
-            >
-              <FaWhatsapp
-                style={{
-                  fontSize: "1.4rem",
-                  verticalAlign: "text-bottom",
-                  marginRight: "5px"
-                }}
-              />
-              Pedir ahora
-            </a>
-        },
-        {
-          image: BG_Logo_ChifaCentro,
-          title: 'Combo Familiar',
-          info: [
-            '3/4 de Pollo Broaster',
-            '+ Porción de Papas Familiar',
-            '+ Ensalada Familiar',
-            '+ 1L Gaseosa (Inca/Coca)',
-          ],
-          price: 'S/ 49.00',
-          button:
-            <a
-              className="btn-primary-slider"
-              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola,%20quiero%20el%20combo%20familiar."
-              target="_blank"
-              style={{ textAlign: "center" }}
-            >
-              <FaWhatsapp
-                style={{
-                  fontSize: "1.4rem",
-                  verticalAlign: "text-bottom",
-                  marginRight: "5px"
-                }}
-              />
-              Pedir ahora
-            </a>
-        },
-        {
-          image: BG_Logo_ChifaCentro,
-          title: 'Combo Súper Familar',
-          info: [
-            '4/4 de Pollo Broaster',
-            '+ Porción de Papas Súper Familiar',
-            '+ Ensalada Familiar',
-            '+ 1.5L Gaseosa (Inca/Coca)'
-          ],
-          price: 'S/ 64.00',
-          button:
-            <a
-              className="btn-primary-slider"
-              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
-              target="_blank"
-              style={{ textAlign: "center" }}
-            >
-              <FaWhatsapp
-                style={{
-                  fontSize: "1.4rem",
-                  verticalAlign: "text-bottom",
-                  marginRight: "5px"
-                }}
-              />
-              Pedir ahora
-            </a>
-        }
-      ]
-      // End Card Content
-    }
-  },
+  //     // Card Content
+  //     card: [
+  //       {
+  //         image: BG_Logo_ChifaCentro,
+  //         title: 'Combo Personal',
+  //         info: [
+  //           '1/4 de Pollo Broaster',
+  //           '+ Papas',
+  //           '+ Ensalada',
+  //           '+ 450ml Gaseosa (Inca/Coca)',
+  //         ],
+  //         price: 'S/ 19.00',
+  //         button:
+  //           <a
+  //             className="btn-primary-slider"
+  //             href="https://wa.me/51956406194?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20personal."
+  //             target="_blank"
+  //             style={{ textAlign: "center" }}
+  //           >
+  //             <FaWhatsapp
+  //               style={{
+  //                 fontSize: "1.4rem",
+  //                 verticalAlign: "text-bottom",
+  //                 marginRight: "5px"
+  //               }}
+  //             />
+  //             Pedir ahora
+  //           </a>
+  //       },
+  //       {
+  //         image: BG_Logo_ChifaCentro,
+  //         title: 'Combo Familiar',
+  //         info: [
+  //           '3/4 de Pollo Broaster',
+  //           '+ Porción de Papas Familiar',
+  //           '+ Ensalada Familiar',
+  //           '+ 1L Gaseosa (Inca/Coca)',
+  //         ],
+  //         price: 'S/ 49.00',
+  //         button:
+  //           <a
+  //             className="btn-primary-slider"
+  //             href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola,%20quiero%20el%20combo%20familiar."
+  //             target="_blank"
+  //             style={{ textAlign: "center" }}
+  //           >
+  //             <FaWhatsapp
+  //               style={{
+  //                 fontSize: "1.4rem",
+  //                 verticalAlign: "text-bottom",
+  //                 marginRight: "5px"
+  //               }}
+  //             />
+  //             Pedir ahora
+  //           </a>
+  //       },
+  //       {
+  //         image: BG_Logo_ChifaCentro,
+  //         title: 'Combo Súper Familar',
+  //         info: [
+  //           '4/4 de Pollo Broaster',
+  //           '+ Porción de Papas Súper Familiar',
+  //           '+ Ensalada Familiar',
+  //           '+ 1.5L Gaseosa (Inca/Coca)'
+  //         ],
+  //         price: 'S/ 64.00',
+  //         button:
+  //           <a
+  //             className="btn-primary-slider"
+  //             href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
+  //             target="_blank"
+  //             style={{ textAlign: "center" }}
+  //           >
+  //             <FaWhatsapp
+  //               style={{
+  //                 fontSize: "1.4rem",
+  //                 verticalAlign: "text-bottom",
+  //                 marginRight: "5px"
+  //               }}
+  //             />
+  //             Pedir ahora
+  //           </a>
+  //       }
+  //     ]
+  //     // End Card Content
+  //   }
+  // },
   // End Content: Chifa Centro
 
   // Top Content: La Mora
@@ -426,7 +429,7 @@ export default [
       contact:
         <a
           className="btn-primary-slider"
-          href="https://wa.me/51980895124?text=Mensajería%20y%20paquetería:%20Hola,%20quiero%20información."
+          href="https://wa.me/51956406194?text=Hola,%20DonRapi,%20por%20favor %20quisiera%20ver%20la%20carta%20y%20precios%20de%20La%20Mora."
           target="_blank"
           style={{ textAlign: "center", width: "100%" }}
         >
@@ -437,15 +440,14 @@ export default [
               marginRight: "5px"
             }}
           />
-          Contactar
+          Pedir Carta
         </a>
       ,
       featured: true,
       titleDescription: '"La Mora" Restaurant-Cafe',
-      description:
-        "Bienvenidos a “La Mora”, Somos un espacio de sencillez y magia: Sencillo en el servicio y Mágico en las comidas y bebidas. Somos su mejor opción para quien desea una experiencia gastronómica única y conoce los sabores del verdadero Perú como en casa, donde siempre contarán con la atención personal, amable y cálida de estos sus servidores.",
-      titleDescription02: "",
-      description02: "",
+      description: "Bienvenidos a “La Mora”, Somos un espacio de sencillez y magia: Sencillo en el servicio y Mágico en las comidas y bebidas. Somos su mejor opción para quien desea una experiencia gastronómica única y conoce los sabores del verdadero Perú como en casa, donde siempre contarán con la atención personal, amable y cálida de estos sus servidores.",
+      titleDescription02: "Servicio Express / Atención Inmediata",
+      description02: "Hola, esta es la carta y precios de los menús del día, si deseas añadir algún pedido especial, o deseas que te enviemos la carta completa y precios, por favor, envíanos un mensaje directo haciendo clic en el botón: PEDIR CARTA (WhatsApp).",
       extras: [
         "Atención express",
         "Tu solución de transporte a un Click",
@@ -495,15 +497,15 @@ export default [
             '1 - Arestú de Pollo',
             '2 - Papa a la Huancaína',
             'Fondo:',
-            '- Patita con Maní',
+            '- Cau Cau Criollo',
             'Bebida:',
-            '- Chicha morada',
+            '- Chicha Morada',
           ],
-          price: 'S/ 19.00',
+          price: 'S/ 8.00',
           button:
             <a
               className="btn-primary-slider"
-              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20personal."
+              href="https://wa.me/51956406194?text=La%20Mora:%20Hola,%20quiero%20el%20menú%20Económico.%20Entrada:[...]"
               target="_blank"
               style={{ textAlign: "center" }}
             >
@@ -531,13 +533,13 @@ export default [
             '3 - Arroz con Pollo',
             '4 - Pollo al Horno',
             'Bebida:',
-            '- Chicha morada',
+            '- Chicha Morada',
           ],
-          price: 'S/ 49.00',
+          price: 'S/ 9.00',
           button:
             <a
               className="btn-primary-slider"
-              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola,%20quiero%20el%20combo%20familiar."
+              href="https://wa.me/51956406194?text=La%20Mora:%20Hola,%20quiero%20el%20menú%20Ejecutivo%20I.%20Entrada:[...]%20Fondo:[...]"
               target="_blank"
               style={{ textAlign: "center" }}
             >
@@ -563,15 +565,15 @@ export default [
             '1 - Asado de Ternera',
             '2 - Tallarines con Asado de Pollo',
             '3 - Pollo al Cilindro',
-            '4 - Cuy Chactado',
+            '4 - Picante de Cuy - Cuy Chactado',
             'Bebida:',
-            '- Chicha morada',
+            '- Chicha Morada',
           ],
-          price: 'S/ 64.00',
+          price: 'S/ 9.00',
           button:
             <a
               className="btn-primary-slider"
-              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
+              href="https://wa.me/51956406194?text=La%20Mora:%20Hola,%20quiero%20el%20menú%20Ejecutivo%20II.%20Entrada:[...]%20Fondo:[...]"
               target="_blank"
               style={{ textAlign: "center" }}
             >
@@ -584,7 +586,38 @@ export default [
               />
               Pedir ahora
             </a>
-        }
+        },
+        {
+          image: BG_Logo_LaMora,
+          title: 'Especial',
+          type: 'Menú de Casa',
+          info: [
+            'Entrada:',
+            '1 - Arestú de Pollo',
+            '2 - Papa a la Huancaína',
+            'Fondo:',
+            '- Pollo al Cilindro',
+            'Bebida:',
+            '- Chicha Morada',
+          ],
+          price: 'S/ 10.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=La%20Mora:%20Hola,%20quiero%20el%20menú%20Ejecutivo%20I.%20Entrada:[...]"
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
       ]
       // End Card Content
     }
@@ -597,7 +630,7 @@ export default [
       id: "17"
     },
     fields: {
-      slug: "comida_rapida",
+      slug: "carnivoro",
       active: true,
       name: "",
       district: "Huancayo, Tambo, Chilca",
@@ -605,14 +638,14 @@ export default [
       speciality: "Comida Rapida",
       logo: Carnivoro,
       image_header: BG_Carnivoro,
-      atention: "Lun-Dom de 16:00-22:00 horas",
+      atention: "Lun-Dom de 16:00 - 21:00 horas",
       experience: 10,
       home: true,
       workshop: false,
       contact:
         <a
           className="btn-primary-slider"
-          href="https://wa.me/51980895124?text=Mensajería%20y%20paquetería:%20Hola,%20quiero%20información."
+          href="https://wa.me/51956406194?text=Hola,%20DonRapi,%20por%20favor %20quisiera%20ver%20la%20carta%20y%20precios%20de%20Carnivoro."
           target="_blank"
           style={{ textAlign: "center", width: "100%" }}
         >
@@ -623,15 +656,14 @@ export default [
               marginRight: "5px"
             }}
           />
-          Contactar
+          Pedir Carta
         </a>
       ,
       featured: true,
       titleDescription: 'Carnivoro',
-      description:
-        "Especialistas en Hamburguesas 100% caseras, combinadas con los mejores insumos y sabores que la gastronomía peruana nos brinda.",
-      titleDescription02: "",
-      description02: "",
+      description: "Especialistas en Hamburguesas 100% caseras, combinadas con los mejores insumos y sabores que la gastronomía peruana nos brinda.",
+      titleDescription02: "Servicio Express / Atención Inmediata",
+      description02: "Hola, te presentamos la carta y precios de los productos más pedidos, por lo general contamos con la posibilidad de atender tus pedidos el mismo día, si deseas añadir algún pedido especial, o deseas que te enviemos la carta completa y precios, por favor, envíanos un mensaje directo haciendo clic en el botón: PEDIR CARTA (WhatsApp).",
       extras: [
         "Atención express",
         "Tu solución de transporte a un Click",
@@ -684,7 +716,7 @@ export default [
           button:
             <a
               className="btn-primary-slider"
-              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20personal."
+              href="https://wa.me/51956406194?text=Carnivoro:%20Hola,%20quiero%20el%20Royal."
               target="_blank"
               style={{ textAlign: "center" }}
             >
@@ -710,7 +742,7 @@ export default [
           button:
             <a
               className="btn-primary-slider"
-              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola,%20quiero%20el%20combo%20familiar."
+              href="https://wa.me/51956406194?text=Carnivoro:%20Hola,%20quiero%20la%20hamburguesa%20A%20lo%20Pobre."
               target="_blank"
               style={{ textAlign: "center" }}
             >
@@ -736,7 +768,7 @@ export default [
           button:
             <a
               className="btn-primary-slider"
-              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
+              href="https://wa.me/51956406194?text=Carnivoro:%20Hola,%20quiero%20la%20Hawaiana."
               target="_blank"
               style={{ textAlign: "center" }}
             >
@@ -762,7 +794,7 @@ export default [
           button:
             <a
               className="btn-primary-slider"
-              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
+              href="https://wa.me/51956406194?text=Carnivoro:%20Hola,%20quiero%20el%20Cheese%20Burguer."
               target="_blank"
               style={{ textAlign: "center" }}
             >
@@ -788,7 +820,7 @@ export default [
           button:
             <a
               className="btn-primary-slider"
-              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
+              href="https://wa.me/51956406194?text=Carnivoro:%20Hola,%20quiero%20el%20Cheese%20Bacone."
               target="_blank"
               style={{ textAlign: "center" }}
             >
@@ -814,7 +846,7 @@ export default [
           button:
             <a
               className="btn-primary-slider"
-              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
+              href="https://wa.me/51956406194?text=Carnivoro:%20Hola,%20quiero%20la%20BBQ."
               target="_blank"
               style={{ textAlign: "center" }}
             >
@@ -840,7 +872,7 @@ export default [
           button:
             <a
               className="btn-primary-slider"
-              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
+              href="https://wa.me/51956406194?text=Carnivoro:%20Hola,%20quiero%20las%20Picantes."
               target="_blank"
               style={{ textAlign: "center" }}
             >
@@ -866,7 +898,7 @@ export default [
           button:
             <a
               className="btn-primary-slider"
-              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
+              href="https://wa.me/51956406194?text=Carnivoro:%20Hola,%20quiero%20la%20salchipapa%20Clásica."
               target="_blank"
               style={{ textAlign: "center" }}
             >
@@ -892,7 +924,63 @@ export default [
           button:
             <a
               className="btn-primary-slider"
-              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
+              href="https://wa.me/51956406194?text=Carnivoro:%20Hola,%20quiero%20la%20salchipapa%20Malcriada."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: BG_Logo_Carnivoro,
+          title: 'Clasicos',
+          type: 'Alitas/Hamburguesas/Salchipapas',
+          info: [
+            '+ 150GR de papas fritas nativas huamantanga, puma maqui y amarilla',
+            '1 - Alitas (Sazonadas y fritas)',
+            '2 - Hamburguesas (Hamburguesa de Res de 130GR)',
+            '3 - Salchipapas(A base de hot-dog de ternera)',
+          ],
+          price: 'S/ 10.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Pedido%20Clasico:%20Hola,%20Quiero%20pedir%20el%20combo%20número:."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: BG_Logo_Carnivoro,
+          title: 'Alitas Especiales',
+          type: '',
+          info: [
+            '+ 150GR de papas fritas nativas huamantanga, puma maqui y amarilla',
+            '1 - BBQ (Bañada en salsa dulce ahumada)',
+            '2 - Orientales (Bañadas en salsa agridulce teriyaki)',
+            '3 - Picantes (Bañadas en salsa de miel picante)',
+          ],
+          price: 'S/ 12.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Pedido%20de%20Alitas%20Especiales:%20Hola,%20Quiero%20pedir%20el%20combo%20número:."
               target="_blank"
               style={{ textAlign: "center" }}
             >
@@ -915,7 +1003,7 @@ export default [
   // Top Content: Mamá Meche
   {
     sys: {
-      id: "17"
+      id: "18"
     },
     fields: {
       slug: "sanguche",
@@ -933,7 +1021,7 @@ export default [
       contact:
         <a
           className="btn-primary-slider"
-          href="https://wa.me/51980895124?text=Mensajería%20y%20paquetería:%20Hola,%20quiero%20información."
+          href="https://wa.me/51956406194?text=Hola,%20DonRapi,%20por%20favor %20quisiera%20ver%20la%20carta%20y%20precios%20de%20Mamá%20Meche."
           target="_blank"
           style={{ textAlign: "center", width: "100%" }}
         >
@@ -944,15 +1032,14 @@ export default [
               marginRight: "5px"
             }}
           />
-          Contactar
+          Pedir Carta
         </a>
       ,
       featured: true,
       titleDescription: 'Sanguchería "Mamá Meche"',
-      description:
-        "La sanguchería criolla de Huancayo. Disfruta los mejores desayunos espectaculares al estilo Mamá Meche!",
-      titleDescription02: "",
-      description02: "",
+      description: "La sanguchería criolla de Huancayo. Disfruta los mejores desayunos espectaculares al estilo Mamá Meche!",
+      titleDescription02: "Servicio Express / Atención Inmediata",
+      description02: "Hola, te presentamos la carta y precios de los productos más pedidos, por lo general contamos con la posibilidad de atender tus pedidos el mismo día, si deseas añadir algún pedido especial, o deseas que te enviemos la carta completa y precios, por favor, envíanos un mensaje directo haciendo clic en el botón: PEDIR CARTA (WhatsApp).",
       extras: [
         "Atención express",
         "Tu solución de transporte a un Click",
@@ -1004,7 +1091,7 @@ export default [
           button:
             <a
               className="btn-primary-slider"
-              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20personal."
+              href="https://wa.me/51956406194?text=Mamá%20Meche:%20Hola,%20quiero%20el%20Pollo%20Deshilachado."
               target="_blank"
               style={{ textAlign: "center" }}
             >
@@ -1029,7 +1116,7 @@ export default [
           button:
             <a
               className="btn-primary-slider"
-              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola,%20quiero%20el%20combo%20familiar."
+              href="https://wa.me/51956406194?text=Mamá%20Meche:%20Hola,%20quiero%20el%20Sanguche%20con%20Asado."
               target="_blank"
               style={{ textAlign: "center" }}
             >
@@ -1037,7 +1124,7 @@ export default [
                 style={{
                   fontSize: "1.4rem",
                   verticalAlign: "text-bottom",
-                  marginRight: "5px"
+                  marginRight: "5px",
                 }}
               />
               Pedir ahora
@@ -1054,7 +1141,7 @@ export default [
           button:
             <a
               className="btn-primary-slider"
-              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
+              href="https://wa.me/51956406194?text=Mamá%20Meche:%20Hola,%20quiero%20el%20Sanguche%20de%20Pavo."
               target="_blank"
               style={{ textAlign: "center" }}
             >
@@ -1079,7 +1166,7 @@ export default [
           button:
             <a
               className="btn-primary-slider"
-              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
+              href="https://wa.me/51956406194?text=Mamá%20Meche:%20Hola,%20quiero%20el%20Chicharrón%20Mamá%20Meche."
               target="_blank"
               style={{ textAlign: "center" }}
             >
@@ -1104,7 +1191,7 @@ export default [
           button:
             <a
               className="btn-primary-slider"
-              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
+              href="https://wa.me/51956406194?text=Mamá%20Meche:%20Hola,%20quiero%20el%20Ciabatta%20con%20Lomo%20Saltado."
               target="_blank"
               style={{ textAlign: "center" }}
             >
@@ -1129,7 +1216,7 @@ export default [
           button:
             <a
               className="btn-primary-slider"
-              href="https://wa.me/51980895124?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20súper%20familiar."
+              href="https://wa.me/51956406194?text=Mamá%20Meche:%20Hola,%20quiero%20el%20Beef%20Cheedar."
               target="_blank"
               style={{ textAlign: "center" }}
             >
@@ -1149,8 +1236,199 @@ export default [
   },
   // End Content: La Mora
 
-  // Top Content: La Mora
-  // End Content: La Mora
+  // Top Content: Palacio Chino
+  {
+    sys: {
+      id: "19"
+    },
+    fields: {
+      active: true,
+      slug: "palacio_chino",
+      name: "",
+      district: "Huancayo, Tambo, Chilca",
+      type: "Chifa",
+      speciality: "Peruano-Oriental",
+      logo: Palacio_Chino,
+      image_header: BG_PalacioChino,
+      atention: "Lun-Dom de 12:00-21:30 horas",
+      experience: 32,
+      home: true,
+      workshop: false,
+      contact:
+        <a
+          className="btn-primary-slider"
+          href="https://wa.me/51956406194?text=Hola,%20DonRapi,%20por%20favor %20quisiera%20ver%20la%20carta%20y%20precios%20del%20Palacio%20Chino."
+          target="_blank"
+          style={{ textAlign: "center", width: "100%" }}
+        >
+          <FaWhatsapp
+            style={{
+              fontSize: "1.4rem",
+              verticalAlign: "text-bottom",
+              marginRight: "5px"
+            }}
+          />
+          Pedir Carta
+        </a>
+      ,
+      featured: true,
+      titleDescription: "Restaurante Palacio Chino IV",
+      description: "La comida china,rica y colorida tiene como caracteristica principal su color diverso, olor aromatico y sabor excelente.",
+      titleDescription02: "Servicio Express / Atención Inmediata",
+      description02: "Hola, te presentamos la carta y precios de los productos más pedidos, por lo general contamos con la posibilidad de atender tus pedidos el mismo día, si deseas añadir algún pedido especial, o deseas que te enviemos la carta completa y precios, por favor, envíanos un mensaje directo haciendo clic en el botón: PEDIR CARTA (WhatsApp).",
+      extras: [
+        "Atención express",
+        "Tu solución de transporte a un Click",
+        "Nuestros precios son muy competitivos",
+        "Te llevamos a domicilio lo que quieras",
+        "Nos adaptamos a la necesidad de cada cliente"
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: BG_Logo_PalacioChino //img13
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: furniture1
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: furniture2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: furniture3
+            }
+          }
+        }
+      ],
+
+      // Card Content
+      card: [
+        {
+          image: BG_Logo_PalacioChino,
+          title: 'Económico',
+          type: 'MENÚ CHIFA',
+          info: [
+            'Sopas:',
+            '1 - Sopa de Pollo',
+            '2 - Sopa Wanta',
+            '3 - Caldo de Patita',
+            'Segundos:',
+            '1 - Areopuerto',
+            '2 - Alitas con Arroz Chaufa',
+            '3 - Chijaukay y Arroz Chaufa',
+            '4 - Piernitas con Salsa Curry y Chaufa',
+            '5 - Piernitas Rellenas y Chaufa',
+            '6 - Mixto Chaufa con Tallarin Saltado',
+            '7 - Mixto Chaufa con Lomo Saltado',
+          ],
+          price: 'S/ 10.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Palacio%20Chino:%20Hola,%20quiero%20el%20combo%20Económico."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: BG_Logo_PalacioChino,
+          title: 'Ejecutivo',
+          type: 'MENÚ CHIFA',
+          info: [
+            'Sopas:',
+            '1 - Sopa de Pollo',
+            '2 - Sopa Wanta',
+            '3 - Caldo de Patita',
+            'Segundos:',
+            '1 - Pollo con Durazno con Arroz Chaufa',
+            '2 - Pollo 5 Sabores y Arroz Chaufa',
+            '3 - Pollo con Frutas y Arroz Chaufa',
+            '4 - Pollo con Salsa de Tamarindo y Arroz Chaufa',
+            '5 - Pollo con Piña y Arroz Chaufa',
+            '6 - Pollo en Salsa Curry y Arroz Chaufa',
+            '7 - Pollo con Verduras y Arroz Chaufa',
+          ],
+          price: 'S/ 10.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Palacio%20Chino:%20Hola,%20quiero%20el%20combo%20Ejecutivo."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: BG_Logo_PalacioChino,
+          title: 'Especial',
+          type: 'MENÚ CHIFA',
+          info: [
+            'Sopas:',
+            '1 - Sopa de Pollo',
+            '2 - Sopa Wanta',
+            '3 - Caldo de Patita',
+            'Segundos:',
+            '1 - Chicharron de Pollo y Arroz Chaufa',
+            '2 - Chancho con Piña y Arroz Chaufa',
+            '3 - Chancho Kinton y Arroz Chaufa',
+            '4 - Enrrollado de Pollo y Arroz Chaufa',
+            '5 - Kamlu Wantan y Arroz Chaufa',
+            '6 - Trucha Rellena y Arroz Chaufa',
+            '7 - Taypa Especial y Arroz Chaufa',
+          ],
+          price: 'S/ 10.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Palacio%20Chino:%20Hola,%20quiero%20el%20combo%20Especial."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        }
+      ]
+      // End Card Content
+    }
+  },
+  // End Content: Palacio Chino
 
   // Top Content: La Mora
   // End Content: La Mora

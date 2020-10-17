@@ -64,6 +64,12 @@ const styles = theme => (
       "&:not(:first-of-type)": {
         marginLeft: -theme.spacing.unit
       }
+    },
+    delivery: {
+      fontSize: "11px",
+      color: "#999999",
+      fontWeight:"400",
+      fontFamily: "'Roboto', Helvetica, Arial",
     }
   }
 );
@@ -186,7 +192,8 @@ class SingleRoom extends Component {
           <div className="cards-overlay"></div>
           <div className="title">
             {/* <span>- {speciality} -</span> */}
-            <span>- Carta de precios -</span>
+            <span>- Carta y precios -</span>
+            <div className="subtitle">Los más pedidos</div>
             {/* <div className="logCom"><img src={logo} className="log" /></div> */}
             <div className="content-atention">
               <span className="atention">🔥Delivery: {atention} </span>
@@ -218,6 +225,7 @@ class SingleRoom extends Component {
                           Precio: {item.price}
                         </h3>
                       </Typography>
+                      <h3 className={classes.delivery}>*El precio no incluye el costo por envio, el costo por envio se calcula de acuerdo a la distancia.</h3>
                       <Divider className={classes.divider} light />
                       <div style={{ textAlign: "center" }}>
                         {item.button}
