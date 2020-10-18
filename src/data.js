@@ -19,23 +19,23 @@ import img12 from "./images/room-12.jpeg";
 import img13 from "./images/room-13.jpeg";
 import img14 from "./images/room-14.jpeg";
 import img15 from "./images/room-15.jpeg";
-import BG_LaMora from "./images/BG_lamora.jpeg";
+import BG_LaMora from "./images/BG_lamora.png";
 import BG_Logo_LaMora from "./images/BG_logo_lamora.jpeg";
 import delivery1 from "./images/details-delivery-1.jpeg";
 import delivery2 from "./images/details-delivery-2.jpeg";
 import delivery3 from "./images/details-delivery-3.jpeg";
-import BG_ViejoMadero from "./images/BG_viejomadero.jpeg";
+import BG_ViejoMadero from "./images/BG_viejomadero.png";
 import BG_Logo_ViejoMadero from "./images/BG_logo_viejomadero.jpeg";
 import furniture1 from "./images/details-furniture-1.jpeg";
 import furniture2 from "./images/details-furniture-2.jpeg";
 import furniture3 from "./images/details-furniture-3.jpeg";
-import BG_ChifaCentro from "./images/BG_chifacentro.jpeg";
+import BG_ChifaCentro from "./images/BG_chifacentro.png";
 import BG_Logo_ChifaCentro from "./images/BG_logo_chifacentro.jpeg";
 import cam1 from "./images/details-cam-1.jpeg";
 import cam2 from "./images/details-cam-2.jpeg";
 import cam3 from "./images/details-cam-3.jpeg";
 
-import BG_Carnivoro from "./images/BG_carnivoro.jpeg";
+import BG_Carnivoro from "./images/BG_carnivoro.png";
 import BG_Logo_Carnivoro from "./images/BG_logo_carnivoro.jpeg";
 
 // Business Logo
@@ -47,7 +47,7 @@ import Carnivoro from "./images/logo_carnivoro.png";
 // Mamá Meche
 import Mama_Meche from "./images/logo_mama_meche.png";
 import BG_Logo_MamaMeche from "./images/BG_logo_mamameche.jpeg";
-import BG_MamaMeche from "./images/BG_mamameche.jpeg";
+import BG_MamaMeche from "./images/BG_mamameche.png";
 // Mamá Meche - Image Card
 import MM1 from "./images/mamameche/1-sanguche-de-pollo.jpeg";
 import MM2 from "./images/mamameche/2-sanguche-de-asado.jpeg";
@@ -59,7 +59,7 @@ import MM6 from "./images/mamameche/6-beef-cheedar.jpeg";
 // Chifa Palacio Chino
 import Palacio_Chino from "./images/logo_palaciochino.png";
 import BG_Logo_PalacioChino from "./images/BG_logo_palaciochino.jpeg";
-import BG_PalacioChino from "./images/BG_palaciochino.jpeg";
+import BG_PalacioChino from "./images/BG_palaciochino.png";
 
 // Image Card
 import Broaster01 from "./images/broaster01.jpeg";
@@ -1338,7 +1338,7 @@ export default [
           button:
             <a
               className="btn-primary-slider"
-              href="https://wa.me/51956406194?text=Palacio%20Chino:%20Hola,%20quiero%20el%20combo%20Económico."
+              href="https://wa.me/51956406194?text=Palacio%20Chino:%20Hola,%20quiero%20el%20combo%20Económico.%20Sopa:[...]%20Segundo:[...]"
               target="_blank"
               style={{ textAlign: "center" }}
             >
@@ -1374,7 +1374,7 @@ export default [
           button:
             <a
               className="btn-primary-slider"
-              href="https://wa.me/51956406194?text=Palacio%20Chino:%20Hola,%20quiero%20el%20combo%20Ejecutivo."
+              href="https://wa.me/51956406194?text=Palacio%20Chino:%20Hola,%20quiero%20el%20combo%20Ejecutivo.%20Sopa:[...]%20Segundo:[...]"
               target="_blank"
               style={{ textAlign: "center" }}
             >
@@ -1410,7 +1410,7 @@ export default [
           button:
             <a
               className="btn-primary-slider"
-              href="https://wa.me/51956406194?text=Palacio%20Chino:%20Hola,%20quiero%20el%20combo%20Especial."
+              href="https://wa.me/51956406194?text=Palacio%20Chino:%20Hola,%20quiero%20el%20combo%20Especial.%20Sopa:[...]%20Segundo:[...]"
               target="_blank"
               style={{ textAlign: "center" }}
             >

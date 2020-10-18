@@ -15,7 +15,7 @@ const Room = memo(({ room }) => {
           {/* <p>experiencia</p> */}
         </div>
         <Link to={`/rooms/${slug}`} className="btn-primary room-link">
-          detalles
+          Ver Carta
         </Link>
       </div>
       <p className="room-info">{speciality}</p>

@@ -6,7 +6,7 @@ import RoomsContainer from "../components/RoomsContainer";
 const Rooms = () => {
   return (
     <>
-      <Hero hero="food">
+      <Hero hero="food" style={{ color: "red" }}>
         <Banner title="Restaurantes">
           {/* <Link to="/" className="btn-primary">
             volver al inicio
