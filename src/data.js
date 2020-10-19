@@ -71,6 +71,24 @@ import Broaster01 from "./images/broaster01.jpeg";
 import Broaster02 from "./images/broaster02.jpeg";
 import Broaster03 from "./images/broaster03.jpeg";
 
+import Popeyes from "./images/logo_popeyes.png";
+import BG_Logo_Popeyes from "./images/BG_logo_popeyes.jpeg";
+import BG_Popeyes from "./images/BG_popeyes.png";
+// Popeyes - Image Card
+import Personal01 from "./images/popeyes/CajunClasico.jpeg";
+import Personal02 from "./images/popeyes/CajunFull.jpeg";
+import Personal03 from "./images/popeyes/CajunMix.jpeg";
+import Personal04 from "./images/popeyes/SuperComboPersonal.jpeg";
+import Compartir01 from "./images/popeyes/FestivalDoble.jpeg";
+import Compartir02 from "./images/popeyes/ComboPara2.jpeg";
+import Compartir03 from "./images/popeyes/DuplaMix.jpeg";
+import Familiar01 from "./images/popeyes/CajunFullFamiliar.jpeg";
+import Familiar02 from "./images/popeyes/FestiClasico.jpeg";
+import Promocion01 from "./images/popeyes/ChickenMix.jpeg";
+import Promocion02 from "./images/popeyes/PrimaveraFest.jpeg";
+import Promocion03 from "./images/popeyes/FestivalPop.jpeg";
+import Promocion04 from "./images/popeyes/FestiSuperFamiliar.jpeg";
+
 import { FaWhatsapp } from "react-icons/fa";
 
 export default [
@@ -1407,8 +1425,452 @@ export default [
   },
   // End Content: Palacio Chino
 
-  // Top Content: La Mora
-  // End Content: La Mora
+  // Top Content: Popeyes
+  {
+    sys: {
+      id: "14"
+    },
+    fields: {
+      active: true,
+      slug: "popeyes",
+      name: "",
+      district: "Huancayo, Tambo, Chilca",
+      type: "Pollo Cajun",
+      speciality: "Popeyes Louisiana Kitchen",
+      logo: Popeyes,
+      image_header: BG_Popeyes,
+      atention: "Lun-Dom de 11:00-21:30 horas",
+      experience: 32,
+      home: true,
+      workshop: false,
+      contact:
+        <a
+          className="btn-primary-slider"
+          href="https://wa.me/51956406194?text=Popeyes:%20Hola,%20quiero%20solicitar%20la%20carta%20completa."
+          target="_blank"
+          style={{ textAlign: "center", width: "100%" }}
+        >
+          <FaWhatsapp
+            style={{
+              fontSize: "1.4rem",
+              verticalAlign: "text-bottom",
+              marginRight: "5px"
+            }}
+          />
+          Contactar
+        </a>
+      ,
+      featured: true,
+      titleDescription: "Pollo Cajún Popeyes",
+      description:
+        "¡Popeyes Perú y aquí encontrarás todo sobre nuestro sabor único. Pruébalo en Picantito o Tradicional! ",
+      titleDescription02: "Servicio Express / Atención Inmediata",
+      description02: "Por lo general contamos con la posibilidad de atender tus pedidos el mismo día, si deseas añadir algún pedido especial, por favor, envíanos un mensaje directo haciendo clic en el botón: CONTACTAR (WhatsApp).",
+      extras: [
+        "Atención express",
+        "Tu solución de transporte a un Click",
+        "Nuestros precios son muy competitivos",
+        "Te llevamos a domicilio lo que quieras",
+        "Nos adaptamos a la necesidad de cada cliente"
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: BG_Logo_Popeyes //img13
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: furniture1
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: furniture2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: furniture3
+            }
+          }
+        }
+      ],
+
+      // Card Content
+      card: [
+        {
+          image: Personal01,
+          title: 'CAJUN CLASICO',
+          info: [
+            'Combo Personal',
+            '+ 2 Piezas de Pollo',
+            '+ 1 Papá Cajún Regular',
+            '+ 1 Gaseosa Regular (Inca/Coca)',
+          ],
+          price: 'S/ 14.90',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20Cajun%20Personal."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: Personal02,
+          title: 'CAJUN FULL',
+          info: [
+            'Combo Personal',
+            '+ 3 Piezas de Pollo',
+            '+ 1 Papa Cajun Regular',
+            '+ 1 Gaseosa Regular (Inca/Coca)',
+          ],
+          price: 'S/ 17.90',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Pedido%20broaster:%20Hola,%20quiero%20el%20combo%20Cajun%20Full."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: Personal03,
+          title: 'CAJÚN MIX',
+          info: [
+            'Combo Personal',
+            '+ 2 Piezas de Pollo',
+            '+ 4 Alitas o Nuggets ',
+            '+ 1 Papa Cajún Regular',
+            '+ 1 Gaseosa Regular (Inca/Coca)',
+          ],
+          price: 'S/ 21.90',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20combo%20Cajún%20Mix."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: Personal04,
+          title: 'SUPER COMBO PERSONAL',
+          info: [
+            'Combo Personal',
+            '+ 3 Piezas de Pollo',
+            '+ 4 Nuggets o Alitas',
+            '+ 1 Papa Cajún Regular',
+            '+ 1 Gaseosa Junior (Inca/Coca)',
+          ],
+          price: 'S/ 25.90',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Pedido%20broaster:%20Hola.%20Quiero%20el%20Super%20Combo%20Especial."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: Compartir01,
+          title: 'FESTIVAL DOBLE NUEVO',
+          info: [
+            'Combo para Compartir',
+            '+ 5 Piezas de Pollo',
+            '+ 4 Nuggets',
+            '+ 2 Papas Cajún Grande',
+          ],
+          price: 'S/ 29.90',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Pedido%20popeyes:%20Hola.%20Quiero%20el%20combo%20Festival%20Doble%20Nuevo."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: Compartir02,
+          title: 'COMBO PARA 2',
+          info: [
+            'Combo para Compartir',
+            '+ 4 Piezas de Pollo',
+            '+ 4 Nuggets o Alitas',
+            '+ 2 Papas Cajún Grande',
+          ],
+          price: 'S/ 29.90',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Pedido%20popeyes:%20Hola.%20Quiero%20el%20combo%20Para%20Dos."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: Compartir03,
+          title: 'DUPLA MIX',
+          info: [
+            'Combo para Compartir',
+            '+ 4 Piezas de Pollo',
+            '+ 4 Alitas o Nuggets',
+            '+ 2 Papas Cajún Regular',
+            '+ 2 Gaseosas Regulares (Inca/Coca)',
+          ],
+          price: 'S/ 34.90',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Pedido%20popeyes:%20Hola.%20Quiero%20el%20combo%20Dupla%20Mix."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: Familiar01,
+          title: 'CAJUN FULL',
+          info: [
+            'Combos Familiares',
+            '+ 6 Piezas de Pollo',
+            '+ 4 Nuggets o Alitas',
+            '+ 2 Papas Cajún Regulares',
+            '+ 2 Gaseosas Regulares (Inca/Coca)',
+          ],
+          price: 'S/ 44.90',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Pedido%20popeyes:%20Hola.%20Quiero%20el%20combo%20Cajun%20Full."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: Familiar02,
+          title: 'FESTI CLASICO',
+          info: [
+            'Combos Familiares',
+            '+ 8 Piezas de Pollo',
+            '+ 1 Papa Cajún Familiar',
+            '+ 4 Alitas Picantes o Nuggets',
+            '+ 1 Gaseosa Regular',],
+          price: 'S/ 47.90',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Pedido%20popeyes:%20Hola.%20Quiero%20el%20combo%20Festi%20Clasico."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: Promocion01,
+          title: 'CHICKEN MIX',
+          info: [
+            'Combo en Promocion',
+            '+ 2 Piezas de Pollo',
+            '+ 3 Nuggets',
+            '+ 1 Papa Cajún Regular',
+            '+ 1 Gaseosa Regular (Inca/Coca)',
+          ],
+          price: 'S/ 15.90',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Pedido%20Popeyes:%20Hola.%20Quiero%20el%20combo%20Chicken%20Mix."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: Promocion02,
+          title: 'PRIMAVERA FEST',
+          info: [
+            'Combo en Promocion',
+            '+ 8 Piezas de Pollo',
+            '+ 4 Nuggets',
+            '+ 1 Papa Cajun Familiar',
+            '+ 4 Gaseosas Junior (Inca/Coca)',
+          ],
+          price: 'S/ 49.90',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Pedido%20Popeyes:%20Hola.%20Quiero%20el%20combo%20Primavera%20Fest."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: Promocion03,
+          title: 'FESTIVAL POP',
+          info: [
+            'Combo en Promocion',
+            '+ 10 Piezas de Pollo',
+            '+ 6 Alitas o Nuggets',
+            '+ 1 Papa Cajun Súper Familiar',
+            '+ 4 Gaseosas Junior',
+          ],
+          price: 'S/ 59.90',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Pedido%20Popeyes:%20Hola.%20Quiero%20el%20combo%20Festival%20Pop."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: Promocion04,
+          title: 'FESTI SÚPER FAMILIAR',
+          info: [
+            'Combo en Promocion',
+            '+ 12 Piezas de Pollo',
+            '+ 6 Nuggets',
+            '+ 1 Papa Cajun Súper Familiar',
+            '+ 1 Chicharron Pop',
+            '+ 4 Gaseosas Junior',
+          ],
+          price: 'S/ 69.90',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Pedido%20Popeyes:%20Hola.%20Quiero%20el%20combo%20festi%20súper%20familiar."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        }
+      ]
+      // End Card Content
+    }
+  },
+  // End Content: Popeyes
 
   // Top Content: La Mora
   // End Content: La Mora
