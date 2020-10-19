@@ -44,6 +44,11 @@ import Chifa_Centro from "./images/logo_chifa_centro.png";
 import La_Mora from "./images/logo_la_mora.png";
 import Carnivoro from "./images/logo_carnivoro.png";
 
+// La Mora
+import LM01 from "./images/lamora/almuerzo01.png";
+import LM02 from "./images/lamora/almuerzo02.png";
+import LM03 from "./images/lamora/almuerzo03.png";
+
 // Mamá Meche
 import Mama_Meche from "./images/logo_mama_meche.png";
 import BG_Logo_MamaMeche from "./images/BG_logo_mamameche.jpeg";
@@ -489,17 +494,17 @@ export default [
       // Card Content
       card: [
         {
-          image: BG_Logo_LaMora,
+          image: LM01,
           title: 'Económico',
           type: 'Menú de Casa',
           info: [
             'Entrada:',
-            '1 - Arestú de Pollo',
-            '2 - Papa a la Huancaína',
+            '1 - Sopa Serrana',
+            '2 - Papa a la Huancaina',
             'Fondo:',
-            '- Cau Cau Criollo',
+            '- Patita con Maní',
             'Bebida:',
-            '- Chicha Morada',
+            '- Agua de Manzana',
           ],
           price: 'S/ 8.00',
           button:
@@ -520,20 +525,21 @@ export default [
             </a>
         },
         {
-          image: BG_Logo_LaMora,
-          title: 'Ejecutivo I',
+          image: LM02,
+          title: 'Ejecutivo',
           type: 'Menú de Casa',
           info: [
             'Entrada:',
-            '1 - Arestú de Pollo',
-            '2 - Papa a la Huancaína',
+            '1 - Sopa Serrana',
+            '2 - Papa a la Huancaina',
             'Fondo:',
-            '1 - Chicharrón Colorado',
-            '2 - Pollo al Maní',
-            '3 - Arroz con Pollo',
-            '4 - Pollo al Horno',
+            '1 - Lengua al Vino',
+            '2 - Pollo a la Jardinera',
+            '3 - Pollo al Horno',
+            '4 - Asado de Ternera',
+            '5 - Tallarines con Asado o Pollo',
             'Bebida:',
-            '- Chicha Morada',
+            '- Agua de Manzana',
           ],
           price: 'S/ 9.00',
           button:
@@ -554,51 +560,18 @@ export default [
             </a>
         },
         {
-          image: BG_Logo_LaMora,
-          title: 'Ejecutivo II',
-          type: 'Menú de Casa',
-          info: [
-            'Entrada:',
-            '1 - Arestú de Pollo',
-            '2 - Papa a la Huancaína',
-            'Fondo:',
-            '1 - Asado de Ternera',
-            '2 - Tallarines con Asado de Pollo',
-            '3 - Pollo al Cilindro',
-            '4 - Picante de Cuy - Cuy Chactado',
-            'Bebida:',
-            '- Chicha Morada',
-          ],
-          price: 'S/ 9.00',
-          button:
-            <a
-              className="btn-primary-slider"
-              href="https://wa.me/51956406194?text=La%20Mora:%20Hola,%20quiero%20el%20menú%20Ejecutivo%20II.%20Entrada:[...]%20Fondo:[...]"
-              target="_blank"
-              style={{ textAlign: "center" }}
-            >
-              <FaWhatsapp
-                style={{
-                  fontSize: "1.4rem",
-                  verticalAlign: "text-bottom",
-                  marginRight: "5px"
-                }}
-              />
-              Pedir ahora
-            </a>
-        },
-        {
-          image: BG_Logo_LaMora,
+          image: LM03,
           title: 'Especial',
           type: 'Menú de Casa',
           info: [
             'Entrada:',
-            '1 - Arestú de Pollo',
-            '2 - Papa a la Huancaína',
+            '1 - Sopa Serrana',
+            '2 - Papa a la Huancaina',
             'Fondo:',
-            '- Pollo al Cilindro',
+            '1 - Pollo al Cilindro',
+            '2 - Costilla de Cerdo al Horno',
             'Bebida:',
-            '- Chicha Morada',
+            '- Agua de Manzana',
           ],
           price: 'S/ 10.00',
           button:
@@ -1322,17 +1295,19 @@ export default [
           type: 'MENÚ CHIFA',
           info: [
             'Sopas:',
-            '1 - Sopa de Pollo',
-            '2 - Sopa Wanta',
-            '3 - Caldo de Patita',
+            '1 - Sopa de pollo',
+            '2 - Sopa wantan',
+            '3 - Caldo de patita',
+            '4 - Sustancia de res',
+            '5 - Sopa womin',
             'Segundos:',
-            '1 - Areopuerto',
-            '2 - Alitas con Arroz Chaufa',
-            '3 - Chijaukay y Arroz Chaufa',
-            '4 - Piernitas con Salsa Curry y Chaufa',
-            '5 - Piernitas Rellenas y Chaufa',
-            '6 - Mixto Chaufa con Tallarin Saltado',
-            '7 - Mixto Chaufa con Lomo Saltado',
+            '1 - Arroz Chaufa',
+            '2 - Tallarin',
+            '3 - Chicharron de pollo(Arroz Chaufa)',
+            '4 - Taypac Especial(Arroz Chaufa)',
+            '5 - Pollo con Piña(Arroz Chaufa)',
+            '6 - Pollo en Salsa Curry(Arroz Chaufa)',
+            '7 - Chancho con Tamarindo(Arroz Chaufa)',
           ],
           price: 'S/ 10.00',
           button:
@@ -1358,17 +1333,19 @@ export default [
           type: 'MENÚ CHIFA',
           info: [
             'Sopas:',
-            '1 - Sopa de Pollo',
-            '2 - Sopa Wanta',
-            '3 - Caldo de Patita',
+            '1 - Sopa de pollo',
+            '2 - Sopa wantan',
+            '3 - Caldo de patita',
+            '4 - Sustancia de res',
+            '5 - Sopa womin',
             'Segundos:',
-            '1 - Pollo con Durazno con Arroz Chaufa',
-            '2 - Pollo 5 Sabores y Arroz Chaufa',
-            '3 - Pollo con Frutas y Arroz Chaufa',
-            '4 - Pollo con Salsa de Tamarindo y Arroz Chaufa',
-            '5 - Pollo con Piña y Arroz Chaufa',
-            '6 - Pollo en Salsa Curry y Arroz Chaufa',
-            '7 - Pollo con Verduras y Arroz Chaufa',
+            '1 - Pollo con verduras(Arroz Chaufa)',
+            '2 - Pollo con Tamarindo(Arroz Chaufa)',
+            '3 - Mixto(Chaufa con Tallarin)',
+            '4 - Pollo 5 sabores(Arroz Chaufa)',
+            '5 - Enrollado de Pollo(Arroz Chaufa)',
+            '6 - Kamlu Wantan(Arroz Chaufa)',
+            '7 - Chancho Kintón(Arroz Chaufa)',
           ],
           price: 'S/ 10.00',
           button:
@@ -1394,17 +1371,17 @@ export default [
           type: 'MENÚ CHIFA',
           info: [
             'Sopas:',
-            '1 - Sopa de Pollo',
-            '2 - Sopa Wanta',
-            '3 - Caldo de Patita',
+            '1 - Sopa de pollo',
+            '2 - Sopa wantan',
+            '3 - Caldo de patita',
+            '4 - Sustancia de res',
+            '5 - Sopa womin',
             'Segundos:',
-            '1 - Chicharron de Pollo y Arroz Chaufa',
-            '2 - Chancho con Piña y Arroz Chaufa',
-            '3 - Chancho Kinton y Arroz Chaufa',
-            '4 - Enrrollado de Pollo y Arroz Chaufa',
-            '5 - Kamlu Wantan y Arroz Chaufa',
-            '6 - Trucha Rellena y Arroz Chaufa',
-            '7 - Taypa Especial y Arroz Chaufa',
+            '1 - Chicharrón de Trucha(Arroz Chaufa)',
+            '2 - Chijaukay(Arroz Chaufa)',
+            '3 - Aeropuerto',
+            '4 - Enrollado con Frutas(Arroz Chaufa)(Dulce)',
+            '5 - Piernita en salsa de Ostión(Arroz Chaufa)',
           ],
           price: 'S/ 10.00',
           button:
