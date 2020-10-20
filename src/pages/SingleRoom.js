@@ -99,9 +99,9 @@ class SingleRoom extends Component {
     if (!room) {
       return (
         <div className="error">
-          <h3> no such room could be found...</h3>
+          <h3> no se puede encontrar el restaurante...</h3>
           <Link to="/rooms" className="btn-primary">
-            back to rooms
+            volver a restaurantes
           </Link>
         </div>
       );
