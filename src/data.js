@@ -89,6 +89,16 @@ import Promocion02 from "./images/popeyes/PrimaveraFest.jpeg";
 import Promocion03 from "./images/popeyes/FestivalPop.jpeg";
 import Promocion04 from "./images/popeyes/FestiSuperFamiliar.jpeg";
 
+// El Embarcadero
+import Embarcadero from "./images/logo_embarcadero.png";
+import BG_Logo_Embarcadero from "./images/BG_logo_embarcadero.jpeg";
+import BG_Embarcadero from "./images/BG_embarcadero.png";
+// Embarcadero - Image Card
+import Combo01 from "./images/embarcadero/combo1.jpeg";
+import Combo02 from "./images/embarcadero/combo2.jpeg";
+import Combo03 from "./images/embarcadero/combo3.jpeg";
+import Combo04 from "./images/embarcadero/combo4.jpeg";
+
 import { FaWhatsapp } from "react-icons/fa";
 
 export default [
@@ -1873,8 +1883,204 @@ export default [
   },
   // End Content: Popeyes
 
-  // Top Content: La Mora
-  // End Content: La Mora
+  // Top Content: Embarcadero
+  {
+    sys: {
+      id: "14"
+    },
+    fields: {
+      active: true,
+      slug: "embarcadero",
+      name: "",
+      district: "Huancayo, Tambo, Chilca",
+      type: "Mariscos",
+      speciality: "El Embarcadero",
+      logo: Embarcadero,
+      image_header: BG_Embarcadero,
+      atention: "Lun-Dom de 12:00 - 15:00 horas",
+      experience: 5,
+      home: true,
+      workshop: false,
+      contact:
+        <a
+          className="btn-primary-slider"
+          href="https://wa.me/51956406194?text=Popeyes:%20Hola,%20quiero%20solicitar%20la%20carta%20completa."
+          target="_blank"
+          style={{ textAlign: "center", width: "100%" }}
+        >
+          <FaWhatsapp
+            style={{
+              fontSize: "1.4rem",
+              verticalAlign: "text-bottom",
+              marginRight: "5px"
+            }}
+          />
+          Contactar
+        </a>
+      ,
+      featured: true,
+      titleDescription: "Cevicheria El Embarcadero",
+      description:
+        "Un lugar sencillo de tertulia y música animada, en el que todo gira en torno a la cocina marina. Las cartas nunca dejan de tener opciones como un arroz con mariscos, ceviches en distintas variedades, chaufa de mariscos, jaleas, chilcanos, entre otros platos conocidos y bien servidos. ",
+      titleDescription02: "Servicio Express / Atención Inmediata",
+      description02: "Por lo general contamos con la posibilidad de atender tus pedidos el mismo día, si deseas añadir algún pedido especial, por favor, envíanos un mensaje directo haciendo clic en el botón: CONTACTAR (WhatsApp).",
+      extras: [
+        "Atención express",
+        "Tu solución de transporte a un Click",
+        "Nuestros precios son muy competitivos",
+        "Te llevamos a domicilio lo que quieras",
+        "Nos adaptamos a la necesidad de cada cliente"
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: BG_Logo_Embarcadero //img13
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: furniture1
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: furniture2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: furniture3
+            }
+          }
+        }
+      ],
+
+      // Card Content
+      card: [
+        {
+          image: Combo01,
+          title: 'COMBO 1',
+          info: [
+            'Menú Marino',
+            '+ Leche de Tigre',
+            '+ Chilcano',
+            '+ Ceviche',
+            '+ Refresco',
+          ],
+          price: 'S/ 10.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Menú%20Marino:%20Hola.%20Quiero%20el%20Combo%201."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: Combo02,
+          title: 'COMBO 2',
+          info: [
+            'Menú Marino',
+            '+ Leche de Tigre',
+            '+ Chilcano',
+            '+ Chaufa de Mariscos o Pescado',
+            '+ Refresco',
+          ],
+          price: 'S/ 12.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Menú%20Marino:%20Hola,%20quiero%20el%20Combo%202%20con%20chaufa%20de:%20[...]."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: Combo03,
+          title: 'COMBO 3',
+          info: [
+            'Menú Marino',
+            '+ Leche de Tigre',
+            '+ Chilcano',
+            '+ Chicharron de Pota o Pescado',
+            '+ Refresco',
+          ],
+          price: 'S/14.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Menú%20Marino:%20Hola,%20quiero%20el%20Combo%203%20con%20chicharron%20de:%20[...]."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: Combo04,
+          title: 'COMBO 4',
+          info: [
+            'Menú Marino',
+            '+ Leche de Tigre',
+            '+ Chilcano',
+            '+ Tallarin Saltado de Mariscos',
+            '+ Refresco',
+          ],
+          price: 'S/ 14.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Menú%20Marino:%20Hola,%20quiero%20el%20Combo%204."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+      ]
+      // End Card Content
+    }
+  },
+  // End Content: Embarcadero
 
   // Top Content: La Mora
   // End Content: La Mora
