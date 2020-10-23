@@ -70,6 +70,9 @@ const styles = theme => (
       color: "#999999",
       fontWeight:"400",
       fontFamily: "'Roboto', Helvetica, Arial",
+      listStyleType: "none",
+      gridRowGap: "0.2rem",
+      display: "grid",
     }
   }
 );
@@ -129,7 +132,8 @@ class SingleRoom extends Component {
       // Card define
       card,
       logo,
-      atention
+      atention,
+      price_delivery,
     } = room;
     const [main, ...defaultImages] = images;
     console.log(defaultImages);
@@ -225,7 +229,12 @@ class SingleRoom extends Component {
                           Precio: {item.price}
                         </h3>
                       </Typography>
-                      <h3 className={classes.delivery}>*El precio no incluye el costo por envio, el costo por envio se calcula de acuerdo a la distancia.</h3>
+                      {(price_delivery != '')
+                        ?
+                        <h3 className={classes.delivery}><li>*El Precio no incluye el costo por envio.</li><li>*El costo por envio es {price_delivery}</li></h3>
+                        :
+                        <h3 className={classes.delivery}>*El Precio no incluye el costo por envio, el costo por envio se calcula de acuerdo a la distancia.</h3>
+                      }
                       <Divider className={classes.divider} light />
                       <div style={{ textAlign: "center" }}>
                         {item.button}
