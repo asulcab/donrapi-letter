@@ -459,7 +459,7 @@ h6 {
   width: 5rem;
   height: 5px;
   margin: 0 auto;
-  background: #FF5100;/* var(--primaryColor);/*  */
+  background: #FF5100;/* var(--primaryColor) */
 }
 /* end of Title */
 /* special order */
