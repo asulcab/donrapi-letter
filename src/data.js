@@ -48,6 +48,7 @@ import Carnivoro from "./images/logo_carnivoro.png";
 import LM01 from "./images/lamora/almuerzo01.png";
 import LM02 from "./images/lamora/almuerzo02.png";
 import LM03 from "./images/lamora/almuerzo03.png";
+import LM04 from "./images/lamora/almuerzo04.jpeg";
 
 // Mamá Meche
 import Mama_Meche from "./images/logo_mama_meche.png";
@@ -529,12 +530,12 @@ export default [
           type: 'Menú de Casa',
           info: [
             'Entrada:',
-            '1 - Sopa Arequipeña',
-            '2 - Crema de Rocoto',
+            '1 - Menestrón',
+            '2 - Papa a la Huancaina',
             'Fondo:',
-            '- Patita con Maní',
+            '- Cau Cau Criollo',
             'Bebida:',
-            '- Agua de Frutas',
+            '- Chicha Morada',
           ],
           price: 'S/ 8.00',
           button:
@@ -560,18 +561,17 @@ export default [
           type: 'Menú de Casa',
           info: [
             'Entrada:',
-            '1 - Sopa Arequipeña',
-            '2 - Crema de Rocoto',
+            '1 - Menestrón',
+            '2 - Papa a la Huancaina',
             'Fondo:',
-            '1 - Enrrollado de Pollo',
-            '2 - Pollo con Verduras',
-            '3 - Pachamanca a la Olla',
-            '4 - Pollo a la Olla',
+            '1 - Chicharron Colorado',
+            '2 - Pollo al Maní',
+            '3 - Arroz con Pollo',
+            '4 - Pollo al Horno',
             '5 - Asado de Ternera',
             '6 - Tallarines con Asado o Pollo',
-            '7 - Chuleta de Cerdo a la Plancha',
             'Bebida:',
-            '- Agua de Frutas',
+            '- Chicha Morada',
           ],
           price: 'S/ 9.00',
           button:
@@ -597,18 +597,50 @@ export default [
           type: 'Menú de Casa',
           info: [
             'Entrada:',
-            '1 - Sopa Arequipeña',
-            '2 - Crema de Rocoto',
+            '1 - Menestrón',
+            '2 - Papa a la Huancaina',
             'Fondo:',
             '1 - Pollo al Cilindro',
             'Bebida:',
-            '- Agua de Frutas',
+            '- Chicha Morada',
           ],
           price: 'S/ 10.00',
           button:
             <a
               className="btn-primary-slider"
-              href="https://wa.me/51956406194?text=La%20Mora:%20Hola,%20quiero%20el%20menú%20Ejecutivo%20I.%20Entrada:[...]"
+              href="https://wa.me/51956406194?text=La%20Mora:%20Hola,%20quiero%20el%20menú%20Especial%20I.%20Entrada:[...]"
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+            </a>
+        },
+        {
+          image: LM04,
+          title: 'Especial Sábado',
+          type: 'Menú de Casa',
+          info: [
+            'Entrada:',
+            '1 - Menestrón',
+            '2 - Papa a la Huancaina',
+            'Fondo:',
+            '1 - Picante de Cuy',
+            '2 - Cuy Chactado',
+            'Bebida:',
+            '- Chicha Morada',
+          ],
+          price: 'S/ 17.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=La%20Mora:%20Hola,%20quiero%20el%20menú%20Especial%20Sábado%20I.%20Entrada:[...]"
               target="_blank"
               style={{ textAlign: "center" }}
             >
