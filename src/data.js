@@ -457,7 +457,7 @@ export default [
       speciality: "Comida Criolla",
       logo: La_Mora,
       image_header: BG_LaMora,
-      atention: "Lun-Dom de 16:00-22:00 horas",
+      atention: "Lun-Dom de 12:00-16:00 horas",
       price_delivery: 'S/ 5.00',
       experience: 10,
       home: true,
@@ -530,12 +530,12 @@ export default [
           type: 'Menú de Casa',
           info: [
             'Entrada:',
-            '1 - Menestrón',
-            '2 - Papa a la Huancaina',
+            '1 - Sopa Serrana',
+            '2 - Papa a la Huancaína',
             'Fondo:',
-            '- Cau Cau Criollo',
+            '- Ajiaco de Olluco',
             'Bebida:',
-            '- Chicha Morada',
+            '- Agua de Manzana',
           ],
           price: 'S/ 8.00',
           button:
@@ -561,17 +561,17 @@ export default [
           type: 'Menú de Casa',
           info: [
             'Entrada:',
-            '1 - Menestrón',
-            '2 - Papa a la Huancaina',
+            '1 - Sopa Serrana',
+            '2 - Papa a la Huancaína',
             'Fondo:',
-            '1 - Chicharron Colorado',
-            '2 - Pollo al Maní',
-            '3 - Arroz con Pollo',
+            '1 - Lengua al Vino',
+            '2 - Apanado al Jugo',
+            '3 - Estofado de Pollo',
             '4 - Pollo al Horno',
             '5 - Asado de Ternera',
             '6 - Tallarines con Asado o Pollo',
             'Bebida:',
-            '- Chicha Morada',
+            '- Agua de Manzana',
           ],
           price: 'S/ 9.00',
           button:
@@ -597,50 +597,18 @@ export default [
           type: 'Menú de Casa',
           info: [
             'Entrada:',
-            '1 - Menestrón',
-            '2 - Papa a la Huancaina',
+            '1 - Sopa Serrana',
+            '2 - Papa a la Huancaína',
             'Fondo:',
             '1 - Pollo al Cilindro',
             'Bebida:',
-            '- Chicha Morada',
+            '- Agua de Manzana',
           ],
           price: 'S/ 10.00',
           button:
             <a
               className="btn-primary-slider"
               href="https://wa.me/51956406194?text=La%20Mora:%20Hola,%20quiero%20el%20menú%20Especial%20I.%20Entrada:[...]"
-              target="_blank"
-              style={{ textAlign: "center" }}
-            >
-              <FaWhatsapp
-                style={{
-                  fontSize: "1.4rem",
-                  verticalAlign: "text-bottom",
-                  marginRight: "5px"
-                }}
-              />
-              Pedir ahora
-            </a>
-        },
-        {
-          image: LM04,
-          title: 'Especial Sábado',
-          type: 'Menú de Casa',
-          info: [
-            'Entrada:',
-            '1 - Menestrón',
-            '2 - Papa a la Huancaina',
-            'Fondo:',
-            '1 - Picante de Cuy',
-            '2 - Cuy Chactado',
-            'Bebida:',
-            '- Chicha Morada',
-          ],
-          price: 'S/ 17.00',
-          button:
-            <a
-              className="btn-primary-slider"
-              href="https://wa.me/51956406194?text=La%20Mora:%20Hola,%20quiero%20el%20menú%20Especial%20Sábado%20I.%20Entrada:[...]"
               target="_blank"
               style={{ textAlign: "center" }}
             >
