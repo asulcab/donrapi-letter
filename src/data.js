@@ -45,9 +45,9 @@ import La_Mora from "./images/logo_la_mora.png";
 import Carnivoro from "./images/logo_carnivoro.png";
 
 // La Mora
-import LM01 from "./images/lamora/almuerzo01.png";
-import LM02 from "./images/lamora/almuerzo02.png";
-import LM03 from "./images/lamora/almuerzo03.png";
+import LM01 from "./images/lamora/almuerzo01.jpeg";
+import LM02 from "./images/lamora/almuerzo02.jpeg";
+import LM03 from "./images/lamora/almuerzo03.jpeg";
 import LM04 from "./images/lamora/almuerzo04.jpeg";
 
 // Mamá Meche
@@ -530,12 +530,12 @@ export default [
           type: 'Menú de Casa',
           info: [
             'Entrada:',
-            '1 - Sopa Serrana',
-            '2 - Papa a la Huancaína',
+            '1 - Cazuela de Ternera',
+            '2 - Papa a la Ocopa',
             'Fondo:',
-            '- Ajiaco de Olluco',
+            '- Locro de Zapallo',
             'Bebida:',
-            '- Agua de Manzana',
+            '- Agua de Carambola',
           ],
           price: 'S/ 8.00',
           button:
@@ -561,17 +561,17 @@ export default [
           type: 'Menú de Casa',
           info: [
             'Entrada:',
-            '1 - Sopa Serrana',
-            '2 - Papa a la Huancaína',
+            '1 - Cazuela de Ternera',
+            '2 - Papa a la Ocopa',
             'Fondo:',
-            '1 - Lengua al Vino',
-            '2 - Apanado al Jugo',
-            '3 - Estofado de Pollo',
-            '4 - Pollo al Horno',
-            '5 - Asado de Ternera',
+            '1 - Pollo a la Cerveza',
+            '2 - Pollo al Horno',
+            '3 - Asado de Ternera',
+            '4 - Pollo al Horno con Rusa',
+            '5 - Chuleta de Cerdo a la Plancha',
             '6 - Tallarines con Asado o Pollo',
             'Bebida:',
-            '- Agua de Manzana',
+            '- Agua de Carambola',
           ],
           price: 'S/ 9.00',
           button:
@@ -597,12 +597,12 @@ export default [
           type: 'Menú de Casa',
           info: [
             'Entrada:',
-            '1 - Sopa Serrana',
-            '2 - Papa a la Huancaína',
+            '1 - Cazuela de Ternera',
+            '2 - Papa a la Ocopa',
             'Fondo:',
             '1 - Pollo al Cilindro',
             'Bebida:',
-            '- Agua de Manzana',
+            '- Agua de Carambola',
           ],
           price: 'S/ 10.00',
           button:
