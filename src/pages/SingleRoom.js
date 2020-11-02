@@ -231,7 +231,7 @@ class SingleRoom extends Component {
                       </Typography>
                       {(price_delivery != '')
                         ?
-                        <h3 className={classes.delivery}><li>*El Precio no incluye el costo por envio.</li><li>*El costo por envio es {price_delivery}</li></h3>
+                        <h3 className={classes.delivery}><li>*El Precio no incluye el costo por envio.</li><li>*El costo por envio es a partir de {price_delivery}</li></h3>
                         :
                         <h3 className={classes.delivery}>*El Precio no incluye el costo por envio, el costo por envio se calcula de acuerdo a la distancia.</h3>
                       }

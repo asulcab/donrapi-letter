@@ -100,6 +100,16 @@ import Combo02 from "./images/embarcadero/combo2.jpeg";
 import Combo03 from "./images/embarcadero/combo3.jpeg";
 import Combo04 from "./images/embarcadero/combo4.jpeg";
 
+// Sr Tako
+import SrTako from "./images/logo_srtako.png";
+import BG_Logo_SrTako from "./images/BG_logo_srtako.jpeg";
+import BG_SrTako from "./images/BG_srtako.png";
+
+// El Costillar
+import ElCostillar from "./images/logo_costillar.png";
+import BG_Logo_ElCostillar from "./images/BG_logo_costillar.jpeg";
+import BG_ElCostillar from "./images/BG_elcostillar.png";
+
 import { FaWhatsapp } from "react-icons/fa";
 
 export default [
@@ -1445,7 +1455,7 @@ export default [
   // Top Content: Popeyes
   {
     sys: {
-      id: "14"
+      id: "20"
     },
     fields: {
       active: true,
@@ -1893,7 +1903,7 @@ export default [
   // Top Content: Embarcadero
   {
     sys: {
-      id: "14"
+      id: "21"
     },
     fields: {
       active: true,
@@ -2089,6 +2099,455 @@ export default [
     }
   },
   // End Content: Embarcadero
+
+  // Top Content: Sr Tako
+  {
+    sys: {
+      id: "22"
+    },
+    fields: {
+      active: true,
+      slug: "sr_tako",
+      name: "",
+      district: "Huancayo, Tambo, Chilca",
+      type: "Antojitos Mexicanos",
+      speciality: "Sr. Tako",
+      logo: SrTako,
+      image_header: BG_SrTako,
+      atention: "Mar, Jue y Sab de 12:00 - 19:00 horas",
+      price_delivery: '',
+      experience: 5,
+      home: true,
+      workshop: false,
+      contact:
+        <a
+          className="btn-primary-slider"
+          href="https://wa.me/51956406194?text=Comida%20Mexicana:%20Hola,%20quiero%20solicitar%20la%20carta%20completa."
+          target="_blank"
+          style={{ textAlign: "center", width: "100%" }}
+        >
+          <FaWhatsapp
+            style={{
+              fontSize: "1.4rem",
+              verticalAlign: "text-bottom",
+              marginRight: "5px"
+            }}
+          />
+          Contactar
+      </a>
+      ,
+      featured: true,
+      titleDescription: "Sr. Tako",
+      description:
+        "Un lugar donde podras disfrutar los mas ricos tacos con una preparación mexicana​ que en su forma estándar consiste en una tortilla enrollada que contiene algún alimento dentro y algún tipo de salsa. Es considerado como uno de los platillos más representativos de la comida mexicana.. ",
+      titleDescription02: "Servicio Express / Atención Inmediata",
+      description02: "Por lo general contamos con la posibilidad de atender tus pedidos el mismo día, si deseas añadir algún pedido especial, por favor, envíanos un mensaje directo haciendo clic en el botón: CONTACTAR (WhatsApp).",
+      extras: [
+        "Atención express",
+        "Tu solución de transporte a un Click",
+        "Nuestros precios son muy competitivos",
+        "Te llevamos a domicilio lo que quieras",
+        "Nos adaptamos a la necesidad de cada cliente"
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: BG_Logo_SrTako //img13
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: furniture1
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: furniture2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: furniture3
+            }
+          }
+        }
+      ],
+
+      // Card Content
+      card: [
+        {
+          image: BG_Logo_SrTako,
+          title: 'COMBO 1',
+          info: [
+            '1 Burrito (Pollo, Cerdo, Res o Mixto)',
+            '+ Nachos con frijoles',
+            '+ Guacamole',
+            '+ Salsas',
+            '+ 1 Gaseosa de 300ml.',
+          ],
+          price: 'S/ 15.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Comida%20Mexicana:%20Hola.%20Quiero%20el%20Combo%201."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+          </a>
+        },
+        {
+          image: BG_Logo_SrTako,
+          title: 'COMBO 2',
+          info: [
+            '3 Tacos (Pollo, Cerdo, Res o Mixto)',
+            '+ Nachos con frijoles',
+            '+ Guacamole',
+            '+ Salsas',
+            '+ 1 Gaseosa de 300ml.',
+          ],
+          price: 'S/ 12.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Comida%20Mexicana:%20Hola.%20Quiero%20el%20Combo%202."
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+          </a>
+        },
+        {
+          image: BG_Logo_SrTako,
+          title: 'COMBO 3',
+          info: [
+            '3 Sincronizadas (Pollo, Cerdo, Res o Mixto)',
+            '+ Delicioso queso',
+            '+ Nachos con frijoles',
+            '+ Salsas y guacamole',
+            '+ 1 Gaseosa de 300ml.',
+          ],
+          price: 'S/13.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Comida%20Mexicana:%20Hola.%20Quiero%20el%20Combo%203."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+          </a>
+        },
+        {
+          image: BG_Logo_SrTako,
+          title: 'COMBO 4',
+          info: [
+            'Torta del Chavo del 8',
+            '+ Pan mexicano tipo Chihuahua',
+            '+ Jamon de pierna',
+            '+ Quesos blanco y edam',
+            '+ Salsas de aguacate, tomate y cebolla',
+            '+ Salsa pica-pica',
+            '+ 1 Gaseosa de 300ml.',
+          ],
+          price: 'S/ 13.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Comida%20Mexicana:%20Hola.%20Quiero%20el%20Combo%204."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+          </a>
+        },
+      ]
+      // End Card Content
+    }
+  },
+  // End Content: Sr Tako
+
+  // Top Content: El Costillar
+  {
+    sys: {
+      id: "23"
+    },
+    fields: {
+      active: true,
+      slug: "el_costillar",
+      name: "",
+      district: "Huancayo, Tambo, Chilca",
+      type: "Comida Rapida",
+      speciality: "Chicharronería",
+      logo: ElCostillar,
+      image_header: BG_ElCostillar,
+      atention: "Lunes -  Domingo de 9:00 - 18:00 horas",
+      price_delivery: '',
+      experience: 23,
+      home: true,
+      workshop: false,
+      contact:
+        <a
+          className="btn-primary-slider"
+          href="https://wa.me/51956406194?text=El%20Costillar:%20Hola,%20quiero%20solicitar%20la%20carta%20completa."
+          target="_blank"
+          style={{ textAlign: "center", width: "100%" }}
+        >
+          <FaWhatsapp
+            style={{
+              fontSize: "1.4rem",
+              verticalAlign: "text-bottom",
+              marginRight: "5px"
+            }}
+          />
+          Contactar
+      </a>
+      ,
+      featured: true,
+      titleDescription: "El Costillar Chicharronería",
+      description:
+        "Chicharronería huancaína, desde 1997 estamos contigo y ahora la tradición la llevamos a tu casa Ofrecemos chicharrones, tamales, morcilla, pan con chicharrón, entre otros.. ",
+      titleDescription02: "Servicio Express / Atención Inmediata",
+      description02: "Por lo general contamos con la posibilidad de atender tus pedidos el mismo día, si deseas añadir algún pedido especial, por favor, envíanos un mensaje directo haciendo clic en el botón: CONTACTAR (WhatsApp).",
+      extras: [
+        "Atención express",
+        "Tu solución de transporte a un Click",
+        "Nuestros precios son muy competitivos",
+        "Te llevamos a domicilio lo que quieras",
+        "Nos adaptamos a la necesidad de cada cliente"
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: BG_Logo_ElCostillar //img13
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: furniture1
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: furniture2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: furniture3
+            }
+          }
+        }
+      ],
+
+      // Card Content
+      card: [
+        {
+          image: BG_Logo_ElCostillar,
+          title: 'Porcion de Chicharrón Dorado',
+          info: [
+            '+ Papa',
+            '+ Mote',
+            '+ Sarsa',
+            '+ Camote',
+          ],
+          price: 'S/ 13.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Chicharronería%20Costillar:%20Hola.%20Quiero%20la%20porción%20de%20chicharron."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+          </a>
+        },
+        {
+          image: BG_Logo_ElCostillar,
+          title: 'Porción de Costillas Doradas',
+          info: [
+            '+ Papa',
+            '+ Mote',
+            '+ Sarsa',
+            '+ Camote',
+          ],
+          price: 'S/ 13.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Chicharronería%20Costillar:%20Hola.%20Quiero%20la%20porción%20de%20costillas."
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+          </a>
+        },
+        {
+          image: BG_Logo_ElCostillar,
+          title: 'Porción de Chicharrón con Morcilla',
+          info: [
+            '+ Papa',
+            '+ Mote',
+            '+ Sarsa',
+            '+ Camote',
+          ],
+          price: 'S/15.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Chicharronería%20Costillar:%20Hola.%20Quiero%20la%20porción%20de%20chicharron%20con%20morcilla."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+          </a>
+        },
+        {
+          image: BG_Logo_ElCostillar,
+          title: 'Tamal Serrano con Chicharrón',
+          info: [
+            'Presa de chicharron',
+            'Tamal de pollo',
+            '+ Guarniciones',
+          ],
+          price: 'S/ 10.50',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Chicharronería%20Costillar:%20Hola.%20Quiero%20la%20porción%20de%20tamal%20con%20chicharrón."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+          </a>
+        },
+        {
+          image: BG_Logo_ElCostillar,
+          title: 'Tamal Serrano con Morcilla',
+          info: [
+            'Morcilla',
+            'Tamal de pollo',
+            '+ Guarniciones',
+          ],
+          price: 'S/ 7.50',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Chicharronería%20Costillar:%20Hola.%20Quiero%20la%20porción%20de%20tamal%20con%20morcilla."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+          </a>
+        },
+        {
+          image: BG_Logo_ElCostillar,
+          title: 'Tamal EL COSTILLAR',
+          info: [
+            'Presa de chicharron',
+            'Morcilla',
+            'Tamal de pollo',
+            '+ Camote',
+            '+ Sarsa',
+          ],
+          price: 'S/ 14.00',
+          button:
+            <a
+              className="btn-primary-slider"
+              href="https://wa.me/51956406194?text=Chicharronería%20Costillar:%20Hola.%20Quiero%20la%20porción%20de%20tamal%20el%20Costillar."
+              target="_blank"
+              style={{ textAlign: "center" }}
+            >
+              <FaWhatsapp
+                style={{
+                  fontSize: "1.4rem",
+                  verticalAlign: "text-bottom",
+                  marginRight: "5px"
+                }}
+              />
+              Pedir ahora
+          </a>
+        },
+      ]
+      // End Card Content
+    }
+  },
+  // End Content: El Costillar
 
   // Top Content: La Mora
   // End Content: La Mora
