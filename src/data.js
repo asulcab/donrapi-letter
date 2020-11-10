@@ -575,7 +575,7 @@ export default [
             '2 - Crema de Rocoto',
             'Fondo:',
             '1 - Tallarin al Pesto con Pollo',
-            '2 - Apanado al jugo',
+            '2 - Apanado al Jugo',
             '3 - Estofado de Pollo',
             '4 - Asado de Ternera',
             '5 - Pollo al Horno',
